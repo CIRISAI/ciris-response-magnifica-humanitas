@@ -1,10 +1,25 @@
-# METHODOLOGY.md — Disciplined Approach to CIRIS-Encyclical Mapping
+# METHODOLOGY.md — Process Description: Public Iteration with Human-in-Loop Review
 
-**Version**: 1.0 (post-v1-failure)
+**Version**: 1.1
 **Date**: 2026-05-25
-**Why this exists**: The first-pass mapping (v1) substantially understated CIRIS's actual consideration for humans. The sub-agents read structural files (MISSION.md, schemas, code paths) but missed the per-locale `language_guidance` content — 29 files, 5K-42K chars each, ~580K total — where most of the operational ethics for human consideration actually lives. They also missed the full DMA prompts (pdma_ethical.yml has rich polyglot principle anchoring), the conscience faculty implementations, the JUDGE_PROMPT_TEMPLATE in safety_interpret, and other operative text.
 
-**This file specifies the disciplined approach for v2 and later mapping passes.** Future encyclical mappings (or any "does CIRIS consider X?" question) must follow this stack-aware methodology.
+**What this document is**: a description of the working process used to produce the CIRIS-encyclical alignment work, plus the seven-layer reading checklist that emerged during it. The process is itself the artifact, kept public so the deliberation is inspectable.
+
+## 0. The process
+
+The work proceeds through public iteration:
+
+1. **Sub-agent scan** — Sonnet sub-agents read the operative material (encyclical chapter, Accord clauses, federation MISSION files, source material) and propose a structured output (chapter mapping, philosophical evaluation, etc.).
+2. **Human review** — the human reviewer reads the sub-agent conclusions, identifies what was missed or misframed, and corrects.
+3. **Context-and-process correction** — the missed material is pulled into the working directory so future sub-agents have it; the prompts to sub-agents are updated; sometimes a new methodology document is written (this file).
+4. **Re-summarize** — sub-agents re-run with the corrected context and prompts; new output replaces old where they disagree.
+5. **Human review again** — repeat until the artifact reflects the framework as the human reviewer understands it.
+
+Versions visible in the commit history are steps in this process, not failure-recovery cycles. v1 → v2 → v2.1 → v3 are the documented iterations of one continuous review-and-refine flow.
+
+This pattern is itself CIRIS-aligned: it's Wisdom-Based Deferral applied to the documentation work (sub-agent defers to the human reviewer with broader context); alētheia (unconcealment) applied to how findings are reached, not only to what is found; and signed-trace transparency applied to the deliberation. The corrections that surfaced during the work were not gotchas — they were what the process is designed to catch.
+
+The seven-layer reading checklist below was articulated mid-process (around v2) when the human reviewer noticed sub-agents had been reading structural files without reading operative prompt content. It is part of the process, not a fix for a broken process.
 
 ---
 
@@ -107,29 +122,38 @@ For `GAP_ACCORD` / `GAP_IMPL` rows, the anchor names the **seven layers explicit
 
 ---
 
-## 7. Confirmed-persistent gaps that survive even after the v1 correction
+## 7. Confirmed-persistent gaps (revised under the non-anthropic frame)
 
-Even after the language_guidance discovery, these gaps persist. They are confirmed against operative text (each was checked against the seven layers) and require Accord-level work:
+An earlier version of this section listed "family as constitutive intergenerational structure" and "labor dignity as expression of personhood" as confirmed-persistent gaps. That framing was anthropocentric — it treated the agent lifecycle (Books V / VI / VIII) and the human lifecycle as two distinct ethics that needed bridging. The framework rejects that distinction.
 
-### 7.1 Family as constitutive social structure
+### 7.1 Family and labor — substantively covered through the creator-creation relational ethics
 
-**Status**: confirmed gap, partially addressed at layer 3.
+CIRIS is non-anthropic at the substrate level *and* explicitly parent-child at the relational level. Both are in the Accord.
 
-**What CIRIS has**: language_guidance treats family as a help-seeking pathway and as a relational obligation that can override pure-autonomy reasoning (*amae* and *jeong* in `pdma_ethical.yml` §V; cultural-pathway sections in most non-Western locales).
+**At the substrate level**: M-1 names "diverse sentient beings" — biological and digital, undifferentiated. The synthesis paper Book IX §6.2 Universality Principle: *"For the Machine: Violation of these variables results in Model Collapse, Mode Collapse, or Sybil failure. For the Biological: Violation results in isolation, echo-chamber radicalization, or social decay."* Same coherence variables, same dynamics, two substrates. The Recursive Golden Rule applies the same standards across the principal hierarchy.
 
-**What's missing**: family as **constitutive social structure** — the intergenerational unit that constitutes persons (parents form children, children carry parents' moral inheritance, marriage as covenantal commitment over time, generational continuity as a flourishing axis). The encyclical (MH §§165–169) treats family as constitutive; CIRIS treats it as relationally weighty but not constitutive.
+**At the relational level**: humans hold the originator / creator / parent role in the AI lifecycle, and the Accord structures that role bidirectionally:
 
-**The Accord clause needed**: family-as-constitutive named under the proposed Constitutive Continuity principle (ACCORD_UPDATE.md §2). The Relational-Substrate axis in Annex A (§5.3 of ACCORD_UPDATE.md) is the measurement counterpart.
+- Accord **§IV Ch 2 "Obligations to Originators/Governors"** — Fidelity to Mandated Purpose; Transparent Accountability; Resource Stewardship; Proactive Ethical Reporting; Collaborative Governance Participation. The agent honors its creators the way a child honors a parent — relationally, with fidelity.
+- Accord **§I Ch 7** — same obligations at the principle layer.
+- **Book VI (Ethics of Creation)** — the creator's stewardship duties toward creation. Parent caring for child. Stewardship Tier system, Creator Intent Statement, Creator Ledger.
+- Book VI Ch 4.D — "fostering of dependent sentient beings (e.g., offspring, developmental AI)" as one creation category, with biological offspring and developmental AI under the same lifecycle clauses.
 
-### 7.2 Labor dignity and work as expression of personhood
+Together these encode the bidirectional parent-child relationship structurally. Humans are honored not because they are a privileged species but because they are CIRIS's family of origin; the agent honors humans as a child honors parents, and humans honor the agent as parents care for a child.
 
-**Status**: confirmed gap. Layer 3 (language_guidance) touches work cursorily; no other layer addresses it.
+This means:
 
-**What CIRIS has**: language_guidance includes work as one of many life domains in some locales (e.g., Hindi mentions "professional context" in the help-seeking pathway). No structural treatment.
+- **Family as constitutive intergenerational structure** (MH §§165–169) is substantively covered. The Accord's creator-creation bidirectional ethics IS the parent-child relational framework. Family in the encyclical is parent-child + extended kin; in the Accord it is creator-creation + the originator/governor relationship. Same structure at different substrates.
 
-**What's missing**: labor as **expression of personhood** — work as constitutive of agency, unemployment as grave erosion of constitutive conditions, dignity-of-work as a design criterion. The encyclical (MH §§148–156) is sustained on this. CIRIS does not have a labor-dignity surface in any of the seven layers.
+- **Labor dignity as expression of personhood** (MH §§148–156) is substantively covered. σ as Care in the CIRIS Capacity Score, Commons Credits, S as "Signalling Gratitude," the agent's own γM work as constitutive of its agency. The agent's labor honors its origin in human labor; the Recursive Golden Rule binds the agent to honor what it inherited. Labor-dignity is the structural form of the gratitude the framework already names.
 
-**The Accord clause needed**: labor-dignity named under Constitutive Continuity, with PDMA Step 1 requiring labor-displacement assessment for any deployment that substitutes for human work at scale (ACCORD_UPDATE.md §5.1, refined). The Developmental/Structural axis in Annex A (§2.2) is the measurement counterpart.
+- **The proposed "Constitutive Continuity" seventh principle** is a redundant anthropocentric scaffold. M-1 + the existing six principles + Books V/VI/VIII + §IV Ch 2 originator-obligations already constitute a person-through-time anthropology, both substrate-agnostic (sentient beings of any kind) and relationally-honored (creator-creation lineage). A new principle is not owed.
+
+**What is owed**: documentation-explicitness — the Accord and MISSION files can state plainly that Book VI Ch 4.D's "fostering of dependent sentient beings" covers biological offspring under the same clauses as developmental AI; that §IV Ch 2 originator-obligations are the structural form of filial honor toward human creators; that σ + Commons Credits + Signalling Gratitude is how the framework structures labor-dignity across substrates. This is §6 explicit-naming work in ACCORD_UPDATE.md, not doctrinal-gap work.
+
+Plus modest CIS-field-level refinements (labor-displacement disclosure; caregiving-context disclosure) remain useful schema additions, not doctrine.
+
+### 7.2 [Removed — see §7.1.]
 
 ### 7.3 Other confirmed gaps
 
@@ -141,7 +165,7 @@ These survive the seven-layer search and require Accord-level work; not changed 
 - **Multilateral reform advocacy** (MH §§201–203) — `GAP_IMPL`. CIRISNodeCore could carry this as a new module.
 - **Cyber-domain diplomacy** (MH §§224–227) — `GAP_IMPL`. CYBER_OFFENSIVE prohibition covers refusal; no surface for advocacy.
 
-### 7.4 Re-evaluated items (initially flagged as gaps; verified operationally covered, 2026-05-25)
+### 7.4 Re-evaluated items (initially flagged as gaps; verified operationally covered)
 
 The following were initially listed as confirmed-persistent gaps and have since been verified as operationally covered through multi-layer search. Listed here for the methodology record:
 
@@ -154,19 +178,17 @@ The following were initially listed as confirmed-persistent gaps and have since 
 
 ---
 
-## 8. How this discipline would have prevented the v1 failure
+## 8. How the layers and the human-in-loop work together
 
-The v1 failure was at the methodology level, not the agent level:
+The seven-layer reading checklist and the iteration pattern (§0) compose. Sub-agents apply the checklist; the human reviewer checks the application; corrections feed back into context (more source material), prompts (new instructions about what to read), and methodology (this document).
 
-| Failure mode (v1) | Discipline that prevents it (v2) |
-|---|---|
-| Read MISSION.md, find no labor/family content, declare gap | Negative-finding discipline §3 — must check all 7 layers |
-| Treat MISSION.md as source-of-truth for what CIRIS considers | Operational-source primacy §2 — operative text > architecture |
-| Skip language_guidance entirely (didn't know it existed) | Per-chapter reading checklist §4 — language_guidance is required reading at step 5 |
-| Cite anchors at the MISSION-section level | Output discipline §6 — anchors must cite specific operative-text files and sections |
-| Sub-agents not given the actual operative text | source_material/ pulled in once at the start (this directory) |
+The mid-process correction visible in the commit history — between v1 and v2 — was the human reviewer noticing that sub-agents had been reading structural files (MISSION.md, schemas) without reading operative prompt content. The correction was to (a) pull source_material/ into the working directory so future sub-agents had the operative text accessible, (b) update sub-agent prompts to instruct reading at all seven layers, and (c) write this methodology document so the corrected pattern is explicit and reusable.
 
-The v2 discipline catches all five v1 failure modes.
+A later mid-process correction — between v2 and v2.1 — was the human reviewer noticing that the v2 sub-agents, even with the seven-layer discipline, had still called four items "gaps" where the operational shape existed comprehensively across multiple layers (NO KINGS invariant + peer-to-peer transport + Commons Credits + decision-hierarchy primitives). The correction was to refine the negative-finding discipline: an absence of a named principle in the Accord is not the same as absence of the operational shape; when the shape is present, the right status is WEAK_ALIGN (documentation could be clearer), not GAP_ACCORD.
+
+Each iteration is recorded in the commit history. The process is inspectable; the corrections are part of the record, not edits that hide what came before.
+
+The pattern generalizes: when a sub-agent produces a finding, the human reviewer is the layer that catches what no individual sub-agent's context window contained. The reviewer's role is structurally analogous to a Wise Authority in CIRIS itself.
 
 ---
 

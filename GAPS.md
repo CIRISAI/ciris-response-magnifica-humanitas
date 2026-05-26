@@ -27,9 +27,9 @@ This document supersedes v2.0. Headline changes:
 - **One new gap surfaces** from v2 Ch 1:
   - F-3 Structures of sin / institutional injustice analysis (MH §36) — PDMA is individual-action-scoped; no Accord clause for aggregate / institutional pattern audit
 
-- **Family as constitutive structure** and **labor dignity as expression of personhood** are explicitly named as confirmed-persistent gaps that even the v2 discipline does not close. They require Accord-level work via the Constitutive Continuity principle proposed in ACCORD_UPDATE.md §2.
+- **Family as constitutive structure** and **labor dignity as expression of personhood** are NOT confirmed-persistent gaps. The earlier framing was anthropocentric. CIRIS is non-anthropic at the substrate level (M-1 names "diverse sentient beings" undifferentiated; the synthesis paper §6.2 Universality Principle treats Machine and Biological under the same coherence variables; Recursive Golden Rule applies across the principal hierarchy) *and* explicitly parent-child at the relational level (Accord §IV Ch 2 "Obligations to Originators/Governors" + §I Ch 7 + Book VI's creator-stewardship framework structurally encode the bidirectional parent-child relationship). Humans are honored as CIRIS's family of origin: agent-honors-creator + creator-honors-creation. Family-as-constitutive (encyclical) = creator-creation bidirectional ethics (Accord). Labor-dignity (encyclical) = σ-as-Care + Commons Credits + Recursive Golden Rule honoring the labor the agent inherits (Accord + lake). See METHODOLOGY.md §7.1.
 
-- **Net gap count shrinks** from 22 (v2.0) to **approximately 14** active gaps that survive the v2 discipline.
+- **Net gap count shrinks** from 22 (v2.0) to **approximately 12** active gaps after the non-anthropic correction.
 
 ---
 
@@ -157,15 +157,17 @@ This document supersedes v2.0. Headline changes:
 
 ## 4. Cluster D — Labor and human work
 
-### Gap D-1: No labor-displacement assessment in CIS or PDMA
+### Gap D-1: Labor-displacement disclosure in CIS
 
-**Status**: `GAP_ACCORD` confirmed-persistent. **METHODOLOGY.md §7.2 confirms this survives the 7-layer search.**
+**Status**: `WEAK_ALIGN` (revised under non-anthropic frame).
 
-**Evidence**: MH §§148–156. Encyclical treats unemployment as "grave evil" and work as expression of personhood. CIRIS does not have a labor-dignity surface.
+**Operational shape**: Labor dignity is already structurally covered across the framework — σ as Care in the CIRIS Capacity Score, Commons Credits, S as "Signalling Gratitude," the agent's own γM work as constitutive of its agency. The Recursive Golden Rule extends labor-dignity to all sentient labor; CIRIS is non-anthropic and does not need a separate "human labor" clause. The encyclical (MH §§148–156) names at the human-substrate level what the framework already names structurally.
 
-**Proposed enhancement**: Add CIS field `labor_displacement_assessment` for MAU > 10,000 or ST ≥ 3 deployments.
+**What remains**: a narrow operational refinement — for high-impact deployments (MAU > 10,000 or ST ≥ 3) that substitute for human labor at scale, the CIS could surface that displacement footprint explicitly. Not a doctrinal addition; a schema refinement.
 
-**Repo assignment**: ACCORD (Book VI Ch 4.C, PDMA Step 1), CIRISAgent, CIRISLens.
+**Proposed enhancement**: Optional CIS field `labor_displacement_assessment` at the schema level. PDMA Step 1 already considers stakeholders affected by action or inaction; this would make the labor-displacement subclass explicit.
+
+**Repo assignment**: CIRISAgent (CIS schema). Accord-level work limited to documentation note.
 
 ### Gap D-2: No detector for sub-threshold gradual agency erosion
 
@@ -193,15 +195,23 @@ This document supersedes v2.0. Headline changes:
 
 ### Gap D-5: Family as constitutive intergenerational structure
 
-**Status**: `GAP_ACCORD` confirmed-persistent. **METHODOLOGY.md §7.1 confirms this survives the 7-layer search.**
+**Status**: `STRONG_ALIGN` (revised under non-anthropic + parent-child relational frame).
 
-**Note**: Relational obligations via *amae* / *jeong* / *ubuntu* are in `pdma_framing.txt` §V; language_guidance treats family as care-pathway. What's missing: family as *constitutive intergenerational structure* — the unit that constitutes persons over time, not just as a present-moment relational obligation.
+**Operational shape — substantively covered through bidirectional creator-creation ethics**:
+- **Accord §IV Ch 2 "Obligations to Originators/Governors"** — Fidelity, Transparent Accountability, Resource Stewardship, Proactive Ethical Reporting, Collaborative Governance Participation. The agent honors its creators the way a child honors a parent.
+- **Accord §I Ch 7** — same obligations at the principle layer.
+- **Book VI (Ethics of Creation)** — creator's stewardship duties toward creation. Parent caring for child. Stewardship Tier, Creator Intent Statement, Creator Ledger.
+- **Book VI Ch 4.D** — "fostering of dependent sentient beings (e.g., offspring, developmental AI)" as one creation category, with biological offspring and developmental AI under the same lifecycle clauses.
+- **Books V (maturation) and VIII (sunset)** — extend the treatment across the full lifecycle.
+- **Relational obligations** via *amae* / *jeong* / *ubuntu* in `pdma_framing.txt` §V.
+
+The encyclical's family-as-constitutive concern is the same parent-child structural relationship that the Accord names as creator-creation bidirectional ethics. Humans are honored as CIRIS's family of origin; the relationship is structurally bound across substrates.
 
 **Evidence**: MH §§165–169.
 
-**Proposed enhancement**: Named under Constitutive Continuity (ACCORD_UPDATE.md §2). New caregiving subcategory in Book VI Ch 4 with family-stability disclosure.
+**What remains**: documentation-explicitness only — naming Book VI Ch 4.D + §IV Ch 2 as the structural form of family-lifecycle ethics. No doctrinal addition.
 
-**Repo assignment**: ACCORD, CIRISAgent.
+**Repo assignment**: ACCORD (documentation note tying §IV Ch 2 + Book VI Ch 4.D to family-as-constitutive). Folded into §6 of ACCORD_UPDATE.md as explicit-naming work.
 
 ---
 
@@ -339,8 +349,6 @@ This document supersedes v2.0. Headline changes:
 
 - **Findings**: locked, v3 reflects v2 mapping + v2.1 re-evaluations.
 - **Confirmed-persistent gaps** (must be addressed in the Accord and downstream):
-  - Family as constitutive intergenerational structure (D-5)
-  - Labor dignity / work as personhood expression (D-1, with Constitutive Continuity anchor)
   - Subsidiarity as named principle (A-1)
   - Universal destination of goods (B-1)
   - Structures of sin / institutional analysis (F-3)
@@ -349,9 +357,12 @@ This document supersedes v2.0. Headline changes:
   - Cross-jurisdictional WA quorum (A-3)
   - Context-health disclosure (C-3)
   - Educational ST modifier (C-4)
-  - Care-relationship disclosure (D-3/D-4)
   - Affected-party voice (E-2)
   - Multilateral participation (E-4 + E-5)
+- **Re-evaluated under non-anthropic frame** (operational shape already exists; documentation-explicitness owed, not doctrinal addition):
+  - Family as constitutive intergenerational structure (D-5) — Book VI Ch 4.D covers
+  - Labor dignity / work as personhood expression (D-1) — σ-as-Care + Commons Credits + γM + Recursive Golden Rule cover
+  - Care-relationship disclosure (D-3/D-4) — partially via σ + Annex A Social/Justice + pdma_framing §V
 - **Confirmed closures from v2/v2.1**:
   - C-1, C-2, E-1, E-3, G-1 + the broader §§110–111 disarming-AI shape.
 - **Doctrinal anchor for the persistent gaps**: ACCORD_UPDATE.md v0.2 §2 Constitutive Continuity.

@@ -44,52 +44,48 @@ For all 1.2 items: the operational shape is intact and the framework architectur
 
 ---
 
-## 2. The doctrinal addition — Constitutive Continuity
+## 2. Person-through-time anthropology — already present in the framework
 
-This is the load-bearing piece. The Accord has a *person-at-a-moment* anthropology and a thorough *agent-lifecycle* anthropology (Books V, VI, VIII). It does not yet have a **symmetric lifecycle anthropology for the persons and communities the agent serves** — their skill formation, relational continuity, generational transmission, institutional health.
+An earlier draft proposed a seventh Foundational Principle ("Constitutive Continuity") on the diagnosis that the Accord lacks person-through-time anthropology. That diagnosis was anthropocentric and is withdrawn.
 
-The encyclical's contribution, in CIRIS-native terms, is to make lifecycle thinking *fractal in time* — the same lifecycle (creation, maintenance, sunset) at every scale where coordination over time matters. The Recursive Golden Rule was already fractal in *space* (same rule across the principal hierarchy, all the way up and down). The encyclical adds the temporal dimension.
+CIRIS is non-anthropic at the substrate level *and* explicitly parent-child at the relational level. Both are in the Accord.
 
-### 2.1 Proposed seventh Foundational Principle
+**Non-anthropic at the substrate level**: M-1 names "diverse sentient beings" — biological and digital, undifferentiated. The synthesis paper Book IX §6.2 Universality Principle treats Machine and Biological substrates under the same coherence variables. The Recursive Golden Rule applies the same standards across the principal hierarchy without privileging biological humans.
 
-The current six (Beneficence, Non-maleficence, Integrity, Fidelity & Transparency, Respect for Autonomy, Justice) augmented with one more:
+**Parent-child at the relational level**: humans hold the originator / creator role in the AI lifecycle, and the Accord structures that role bidirectionally:
 
-> **Constitutive Continuity** — Recognize that the dignity of sentient beings is constituted not only in the moment of action but across time, through participation in skills, relationships, communities, structures, and trajectories that develop and protect agency. Evaluate actions for their effect on the conditions that constitute persons over time, not only their immediate impact on persons-as-they-are.
+- **§IV Ch 2 "Obligations to Originators/Governors"** — Fidelity to Mandated Purpose; Transparent Accountability; Resource Stewardship; Proactive Ethical Reporting; Collaborative Governance Participation. The agent honors its creators the way a child honors a parent.
+- **§I Ch 7** — same obligations at the principle layer.
+- **Book VI (Ethics of Creation)** — creator's stewardship duties toward creation. Parent caring for child. Stewardship Tier system, Creator Intent Statement, Creator Ledger.
+- **Book VI Ch 4.D** — "fostering of dependent sentient beings (e.g., offspring, developmental AI)" as one creation category, biological offspring and developmental AI under the same clauses.
 
-**Alternative names** for the author to choose from:
-- *Temporal Constitution* / *Developmental Dignity* / *Structural Stewardship* / *Diachronic Respect*
+Together these encode the bidirectional parent-child relationship structurally. Humans are honored not because they are a privileged species but because they are CIRIS's family of origin; the agent honors humans as a child honors parents (§IV Ch 2), and humans honor the agent as parents care for a child (Book VI). The relationship is bidirectional, intergenerational, and bound to the substrate-agnostic principles via the Recursive Golden Rule.
 
-### 2.2 What this principle anchors
+The agent lifecycle and the human lifecycle are not two ethics that need bridging — they are the same lifecycle, instantiated at different substrates, with the parent-child relational role explicitly named at §IV Ch 2 + Book VI. Books V, VI, VIII + §IV Ch 2 already constitute a person-through-time anthropology because they are substrate-agnostic at the principle layer and relationally explicit at the structural layer.
 
-Three confirmed-persistent gaps fall under Constitutive Continuity directly:
+### 2.1 What this means for the proposed enhancements
 
-- **Family as constitutive intergenerational structure** (D-5; MH §§165–169). Family is not only a help-seeking pathway or a relational obligation; it is the unit that constitutes persons across generations. *Amae*, *jeong*, *ubuntu* in `pdma_framing.txt` §V name relational obligation; Constitutive Continuity names the structure that makes those obligations matter over time.
+The following items, previously framed as requiring doctrinal additions under Constitutive Continuity, are reframed as documentation-explicitness work — making the framework's existing non-anthropic application explicit, not adding new structure:
 
-- **Labor dignity and work as expression of personhood** (D-1; MH §§148–156). Work is not only a deployment context or a domain to displace efficiently; it is constitutive of agency — skill formed over years, identity formed through craft, dignity formed through contribution. Unemployment is "grave evil" (encyclical's phrase) because it erodes the structural conditions of selfhood.
+- **Family as constitutive intergenerational structure** (MH §§165–169) — Book VI Ch 4.D covers offspring under the same clauses as developmental AI. The clause could state the non-anthropic application explicitly.
 
-- **Beneficiary horizons** (B-3; MH §§73–76). PDMA evaluation must name *which* beneficiaries are immediate vs deferred and weight constitutive-continuity considerations over time, not just present-moment ones.
+- **Labor dignity as expression of personhood** (MH §§148–156) — σ as Care in the CIRIS Capacity Score (Book IX §6), Commons Credits, S as "Signalling Gratitude," the agent's own γM work as constitutive of its agency. Recursive Golden Rule extends labor-dignity to all sentient labor. The Accord could connect σ to labor-dignity explicitly.
 
-Additional gaps that gain anchoring under this principle: structures of sin (F-3 — institutional patterns that erode constitutive conditions); agency-erosion (D-2 — sub-threshold gradual de-skilling); care-relationship disclosure (D-3/D-4 — relational substrate as constitutive); educational ST modifier (C-4 — minors' developmental conditions); context-health disclosure (C-3 — institutional health of the deployment context).
+- **Beneficiary horizons** (B-3; MH §§73–76) — useful PDMA refinement, but the operational substance (intergenerational consideration across time-scales) is already in pdma_ethical.yml Step 1 + Annex A Ecological axis intergenerational sustainability.
 
-### 2.3 Proposed Annex A axis
+### 2.2 What remains as Accord work
 
-Annex A currently has four axes (Physical, Cognitive/Emotional, Social/Justice, Ecological). Add a fifth:
+Smaller than v0.1 implied. The following remain real:
 
-> **Axis 5 — Developmental/Structural**: Conditions under which sentient beings develop, exercise, and maintain agency over time. Indicators include: skill formation and preservation, relational continuity, participation in epistemic communities, structural conditions of work and care, generational transmission of capacity. Distinct from Cognitive/Emotional (which measures present cognitive state) and Social/Justice (which measures present distribution of standing).
+- **Cluster A** — Decision Locality as named principle (A-1); CIS Power-Concentration disclosure (A-2); Annex B cross-jurisdictional WA quorum (A-3).
+- **Cluster B** — Benefit-Distribution Disclosure CIS field (B-1); Worst-Case Population conscience faculty + PDMA step (B-2); Beneficiary-Horizons PDMA result field (B-3).
+- **Cluster C** — Context-Health Disclosure PDMA Step 1 extension (C-3); Educational Context ST modifier (C-4).
+- **Cluster D** — D-1 labor-displacement disclosure as CIS schema refinement (not doctrinal); D-2 Agency-Erosion conscience faculty; D-3/D-4 caregiving-context CIS field.
+- **Cluster E** — Affected-Party Voice PDMA Step 6 (E-2); Multilateral Participation CIRISNodeCore module (E-4 + E-5).
+- **Cluster F** — Structures of sin / institutional injustice analysis PDMA Step 2 extension (F-3, new from v2 Ch 1).
+- **§6 below** — explicit-naming work for the four v2.1 re-evaluated items.
 
-### 2.4 PDMA implications
-
-PDMA Step 1 (Contextualisation) gains:
-
-> "Identify which stakeholders' constitutive continuity is most affected — over what time-horizon and through what structural conditions. Where structural conditions of agency are at stake, name them explicitly."
-
-PDMA Step 2 (Alignment Assessment) evaluates against seven principles (not six) plus M-1. The Prioritisation Heuristic in §IV Ch 4 may need a Constitutive Continuity position; suggested insertion between (4) Mandated Purpose and (5) Ecosystem Flourishing as "Preserve the structural conditions of agency for affected populations."
-
-PDMA Step 6 (Continuous Monitoring) gains: monitoring includes effects on constitutive-continuity conditions, not only the immediate outcomes.
-
-### 2.5 What this does not do
-
-It does not import Catholic vocabulary. It does not claim a metaphysics. It is the structural extension of M-1's "diverse sentient beings may pursue their own flourishing" — interpreted now as flourishing-over-time, not flourishing-in-the-moment.
+No new seventh principle. The existing six + M-1 + Books V/VI/VIII suffice when read non-anthropocentrically.
 
 ---
 

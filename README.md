@@ -25,13 +25,13 @@ The author of CIRIS is not Catholic. This is intellectual deference to a senior 
 
 ---
 
-## Note on v1 limitations (the work continues)
+## The working process
 
-The first commit (v1) understated CIRIS's actual consideration for humans because the sub-agents producing the chapter mappings read structural files (MISSION.md, schemas, code paths) without reading the operative text the agent reasons against at PDMA / conscience time — specifically the per-locale `language_guidance` content (29 files, ~580 KB total) where most of the operational human-consideration lives.
+The work proceeds through public iteration with human-in-loop review: Sonnet sub-agents scan and propose; the human reviewer reads the conclusions and identifies what was missed or misframed; context and prompts are corrected; sub-agents re-run; the reviewer checks again. The commit history records the iterations so the deliberation itself is inspectable.
 
-**[METHODOLOGY.md](METHODOLOGY.md)** specifies the disciplined approach for v2 and later passes — a seven-layer stack-aware methodology with negative-finding discipline. Future mapping work follows it. Family-as-constitutive-structure and labor-dignity-and-work-as-expression-of-personhood are surfaced there as confirmed-persistent gaps that survive the v2 discipline and require Accord-level treatment.
+This pattern is the CIRIS-aligned posture applied to the documentation work — Wisdom-Based Deferral (sub-agent defers to the human reviewer with broader context), alētheia at the process layer (how findings are reached, not only what is found), and signed-trace transparency applied to the deliberation. Corrections visible in the commit history are not gotchas or recoveries — they are what the process is designed to catch.
 
-The v1 mapping files remain as a historical record. v2 output (forthcoming) will replace them where they disagree.
+**[METHODOLOGY.md](METHODOLOGY.md)** describes the process and the seven-layer reading checklist that emerged during it. Versions visible in the history (v1 → v2 → v2.1 → v3) are documented iterations of one continuous review-and-refine flow.
 
 ---
 
