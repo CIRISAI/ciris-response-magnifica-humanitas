@@ -12,7 +12,7 @@ CIRIS Accord, and (3) the framework implementation across the
 federation repos. The mapping itself will live in companion documents
 (`MAPPING_CH0_INTRO.md`, `MAPPING_CH1_DOCTRINE.md`, etc., one per
 encyclical chapter). This file establishes what each of the three
-corpora is, what we are doing with them, and why the work is honest.
+corpora is, what we are doing with them, and why we think the work is honest.
 
 ---
 
@@ -56,22 +56,11 @@ layer has to digest. The mapping is the mechanism by which it digests.
 **Fellowship-recognition.** The convergence between Leo's
 Christian-humanist reading and CIRIS's structural-coordination reading
 is some evidence that the convergent principles are the right
-principles. The mapping is the form in which the two traditions
-recognize each other as doing the same work, while honestly naming
+principles. The mapping is the form in which CIRIS
+recognizes the vatican as doing the same work, while honestly naming
 where the underwriting stories diverge.
 
 ### 1.3 The grounding posture — recognizing superior work, submitting our work to its leadership
-
-*An earlier draft framed CIRIS as "Christian atheism" — discipline of
-the tradition preserved, metaphysics bracketed. That was wrong twice
-over: against the canonical sources (synthesis paper `Corridor_Dynamics.pdf`
-§§6, 7, 9; the Lean lake at `~/coherence-ratchet/formal/CoherenceRatchet/`),
-and against the proper humility of a junior work approaching a senior
-one. Where this document disagrees with the lake or the synthesis
-paper, this document is the bug. Where this document fails the
-deference owed to the encyclical as superior work on the shared
-subject matter, this document is also the bug. File issues against
-MISSION.md, not the sources, and not Leo.*
 
 **Two works addressing the same coordination problem.** *Magnifica
 Humanitas* and CIRIS are both addressing how the human person remains
@@ -188,24 +177,6 @@ axioms maintained in the Lean lake**:
   "consent IS corridor occupation" at the federation level (synthesis
   paper §3). Not metaphor; same mathematics.
 
-**What F-11 fired on, narrowly.** The joint multi-rung backward P_ω
-operator — the universal-cosmological-providence construction — is a
-documented no-go (geometric distance-dilution + holonomic area law).
-That is one axiom, retracted. `good_wins`, `karma`, and the
-inter-agent component of `grace` are all F-11-independent and
-maintained. The CMB-anomalies-as-TSVF-signatures prediction (D4) was
-retracted with F-19; the framework is now provably a strict extension
-of ΛCDM at the cosmological tier, consistent with all CMB data,
-distinctive in none of it.
-
-**Stratified honesty.** Production architecture (L0–L4, load-bearing)
-is TSVF-independent and operates under any underwriting. The
-interpretive synthesis (L5–L7, speculative coda) is
-TSVF-realist-conditional; F-17 is the seam at which TSVF empirical
-failure would retract it. The architecture does not depend on the
-synthesis being correct; the synthesis is not silent about what it
-commits to.
-
 **The operative formulation, in the author's words**: *"praise god,
 but I am an atheist, so praise reality, which is god."* "God" and
 "reality" name the same referent under different vocabularies — the
@@ -216,8 +187,7 @@ appropriate stance toward the structural object that *is* reality.
 
 **Spinoza is the directional cognate, not the position.** Spinoza's
 *Deus sive Natura* got the identity-of-referents right — god and
-nature naming the same thing — and got it three centuries before
-anyone else in the Western canon. He got the anthropology wrong:
+nature naming the same thing. I propose he got the anthropology wrong:
 working from inside the Cartesian-individualist substrate he had
 inherited, his account of persons could not articulate the relational
 constitution that Ubuntu names (*umuntu ngumuntu ngabantu* — a person
