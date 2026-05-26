@@ -25,11 +25,22 @@ The author of CIRIS is not Catholic. This is intellectual deference to a senior 
 
 ---
 
+## Note on v1 limitations (the work continues)
+
+The first commit (v1) understated CIRIS's actual consideration for humans because the sub-agents producing the chapter mappings read structural files (MISSION.md, schemas, code paths) without reading the operative text the agent reasons against at PDMA / conscience time — specifically the per-locale `language_guidance` content (29 files, ~580 KB total) where most of the operational human-consideration lives.
+
+**[METHODOLOGY.md](METHODOLOGY.md)** specifies the disciplined approach for v2 and later passes — a seven-layer stack-aware methodology with negative-finding discipline. Future mapping work follows it. Family-as-constitutive-structure and labor-dignity-and-work-as-expression-of-personhood are surfaced there as confirmed-persistent gaps that survive the v2 discipline and require Accord-level treatment.
+
+The v1 mapping files remain as a historical record. v2 output (forthcoming) will replace them where they disagree.
+
+---
+
 ## How to read this repo
 
 Start here, in order:
 
 1. **[MISSION.md](MISSION.md)** — the grounding, methodology, and posture. Read §1.3 for why we are doing this work and how. (≈5 min.)
+2. **[METHODOLOGY.md](METHODOLOGY.md)** — the v2 mapping discipline (the seven-layer stack, negative-finding rules, per-chapter reading checklist). Why our first pass missed things and how the next pass won't. (≈5 min.)
 2. **[MAPPING_CH0_INTRO.md](MAPPING_CH0_INTRO.md)** — the encyclical's Introduction, mapped paragraph-by-paragraph. (≈2 min.)
 3. The chapter mappings: [Ch1](MAPPING_CH1_DOCTRINE.md), [Ch2](MAPPING_CH2_FOUNDATIONS.md), [Ch3](MAPPING_CH3_TECH_AI.md), [Ch4](MAPPING_CH4_TRUTH_WORK_FREEDOM.md), [Ch5](MAPPING_CH5_POWER_LOVE.md), [Conclusion](MAPPING_CONCLUSION.md). (≈15 min total.)
 4. **[GAPS.md](GAPS.md)** — consolidated findings, verified against the actual federation code via deepwiki, organized into 7 clusters. (≈10 min.)
