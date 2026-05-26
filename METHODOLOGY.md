@@ -135,8 +135,22 @@ Even after the language_guidance discovery, these gaps persist. They are confirm
 
 These survive the seven-layer search and require Accord-level work; not changed by the v1 correction:
 
-- **Universal destination of goods / structural de-concentration** (MH §§65–67, §§110–111) — `GAP_ACCORD`, all seven layers silent. Accord §VI Ch 1 + §VI Ch 5 extension proposed in ACCORD_UPDATE.md.
-- **Subsidiarity as named principle** (MH §§68–72) — implementation shape exists (CIRISEdge peer-to-peer), no named principle. Decision Locality clause proposed in ACCORD_UPDATE.md §3.1.
+- **Universal destination of goods** (MH §§65–67) — `GAP_ACCORD`, all seven layers silent on distributive-allocation principle. Accord §VI Ch 1 + §VI Ch 5 extension proposed in ACCORD_UPDATE.md.
+- **Subsidiarity as named principle** (MH §§68–72) — implementation shape exists (CIRISEdge peer-to-peer; PDMA Step 5 relational balance; CIRISNodeCore "no central scorer"); no named Accord principle. Decision Locality clause proposed in ACCORD_UPDATE.md §3.1.
+- **Structures of sin / institutional injustice analysis** (MH §36) — PDMA is individual-action-scoped; no Accord clause for aggregate / institutional pattern analysis. Surfaced as new GAP_ACCORD in v2 Ch 1.
+- **Multilateral reform advocacy** (MH §§201–203) — `GAP_IMPL`. CIRISNodeCore could carry this as a new module.
+- **Cyber-domain diplomacy** (MH §§224–227) — `GAP_IMPL`. CYBER_OFFENSIVE prohibition covers refusal; no surface for advocacy.
+
+### 7.4 Re-evaluated items (initially flagged as gaps; verified operationally covered, 2026-05-25)
+
+The following were initially listed as confirmed-persistent gaps and have since been verified as operationally covered through multi-layer search. Listed here for the methodology record:
+
+- **Disarming AI from monopoly logic** (MH §§110–111) — `WEAK_ALIGN` (re-evaluated, not gap). `prohibitions.py` "NO KINGS" architectural invariant + `MISSION_CIRISEdge` peer-to-peer no-broker + `MISSION_CIRISNodeCore` "no central scorer (post-F-11)" + anti-strategy-monopoly federation health observable + AGPL-3.0 license. Accord doesn't name the principle by phrase but architecture enforces the shape across multiple layers.
+- **Care economy / commons credits** (MH §§112–114) — `STRONG_ALIGN` (re-evaluated). `CIRIS_COMPREHENSIVE_GUIDE.txt` §"Commons Credits": non-monetary contribution recognition (`patterns_contributed`, `users_helped`, `impact_score`, "Recognition without artificial scarcity, centralized gatekeeping, or zero-sum competition"). The **S in CIRIS literally expands as "Signalling Gratitude"**; σ = Care formally per Book IX §6.1; decay-and-refresh ODE for gratitude-as-practice. Sister repo `CIRISBilling` operationalizes.
+- **Compute/energy as decision input** (MH §101) — `STRONG_ALIGN` (re-evaluated). Accord §IV Ch 2 already mandates "Resource Stewardship: Use compute, data, and energy efficiently; publish quarterly stewardship audits." LLMBus tracks per-call `carbon_grams` + `energy_kwh` aggregated per thought_id, in audit chain. Encyclical asks for environmental accounting; CIRIS accounts. (Forward-feed into PDMA Step 1 is a CIRIS internal enhancement, not what §101 demands.)
+- **Dialogue as negotiation / culture of negotiation** (MH §§219–223) — `WEAK_ALIGN` (re-evaluated, not gap). `MISSION_CIRISNodeCore` decision-hierarchy primitives (Goal/Approach/Method/Progress Measure DAG) explicitly support "multiple Approaches per Goal supported (federated A/B); sub-federation branching for genuine strategic incompatibility"; Primitive 11 Reconsideration (reverse-consequence axis); voting + expertise consensus + moderation = full deliberative apparatus. The Accord doesn't carry "negotiation culture" by phrase but the primitive set carries the operational shape.
+
+**Lesson for the methodology**: an absence of a named principle in the Accord is not equivalent to absence of the operational shape across the seven layers. The v2 discipline corrects this; future evaluators should ask "is the operational shape comprehensive?" before asserting `GAP_ACCORD`. When operational shape exists but Accord-level naming is absent, the correct status is `WEAK_ALIGN` (Accord-level naming missing) — not `GAP_ACCORD` (operational shape missing).
 
 ---
 
