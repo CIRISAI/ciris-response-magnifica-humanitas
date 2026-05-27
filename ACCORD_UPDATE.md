@@ -181,9 +181,26 @@ Surfaced in v2 Ch 1 mapping: the Accord's PDMA is individual-action-scoped; no c
 
 > "For deployments with ST ≥ 3 or aggregate impact above declared thresholds, PDMA Step 2 must additionally evaluate the deployment's contribution to structural / institutional patterns of harm — patterns that emerge from individually-PDMA-compliant actions in aggregate. Where the contribution erodes the conditions under which protected populations develop and maintain agency (per Constitutive Continuity), the action's aggregate footprint is the relevant moral object, not only the per-action footprint."
 
-### 7.2 Implementation venue
+### 7.2 Implementation venue — resolved to CIRISLensCore (per FSD-002 v1.2)
 
-Per v3 §6 (F-3): scope for this analysis crosses LensCore's substrate definition (which is signed-trace measurement, not impact measurement). Implementation likely belongs in a sibling project — possibly an explicit "impact measurement" crate distinct from `lens-core`. Out of scope for this Accord update; flagged for federation roadmap.
+The earlier framing — that aggregate-pattern detection would cross LensCore's substrate definition and belong in a separate sibling repo — was wrong. It conflated two different things: (a) computing real-world impact metrics (which LensCore correctly excludes), and (b) detecting aggregate-correlation patterns in the federation's own signed traces (which LensCore's existing five Coherence Ratchet detectors do by construction). F-3 is (b), not (a).
+
+The implementation is shipped at **CIRISRegistry FSD-002 v1.2 §3.5.3** as the prefix **`detection:correlated_action:{axis}`** — population-scale correlated-action detector, LensCore-owned, calibrated via `CIRISAI/RATCHET/calibration/correlated_action_v{N}.yaml` (versioned, hash-pinned, amendable via federation Contribution + WA quorum).
+
+The detector reads federation-emitted signed traces and reports correlation structure (`ρ → 1`, `k_eff → 1`) over goal-aligned individually-compliant pursuit whose aggregate trajectory affects individuals or groups outside the pursuit — the operational form of what the encyclical names "structures of sin" and the framework names structural injustice. Polarity carries the verdict; the prefix names the mechanism, not the moral object.
+
+**Naming discipline**: the v1.2 rename from `emergent_deception` → `correlated_action` was enforced by the new FSD-002 §1.10.1 operational-language discipline (the safety-vs-censorship gate). The prefix must describe machine-checkable conditions, not subjective qualities; the framework's Ubuntu reading stays in §1.10 prose without being wire-enforced.
+
+**Composition**: per FSD-002 §3.5.3 + CIRISNodeCore #8 — a `detection:correlated_action:*` attestation may feed `moderation:*` ModerationEvents as `evidence_refs`, but is never sole evidence for `slashing:*` (RATCHET-flag rule). WA quorum remains the load-bearing adjudication gate.
+
+**Cross-references**:
+- [CIRISRegistry FSD-002 v1.2 §3.5.3](https://github.com/CIRISAI/CIRISRegistry/blob/main/FSD/FSD-002_FEDERATION_SURFACE.md)
+- [CIRISLensCore #23](https://github.com/CIRISAI/CIRISLensCore/issues/23) — detector ownership + implementation
+- [CIRISAI/RATCHET #2](https://github.com/CIRISAI/RATCHET/issues/2) — calibration package
+- [CIRISNodeCore #8](https://github.com/CIRISAI/CIRISNodeCore/issues/8) — composition with P8 Moderation
+- [Issue #2](https://github.com/CIRISAI/ciris-response-magnifica-humanitas/issues/2) — the upstream correction that produced these assignments
+
+**What remains as Accord-level work**: the PDMA Step 2 extension naming institutional-pattern analysis as required evaluation for ST ≥ 3 deployments. The implementation surface is shipped; the doctrinal naming inside the Accord is the remaining work.
 
 ---
 

@@ -91,6 +91,16 @@ score against it." That's the hole an adversary drives a cohort-
 spoofing attack through (LC-AV-8). Inferred-cohort check is the
 authorization layer for what the agent claims about itself.
 
+### Cross-link: structural-injustice / correlated-action detection (F-3)
+
+The detector set is **in-scope for population-scale correlated-action detection** at the federation layer (the F-3 dimension surfaced by the *Magnifica Humanitas* mapping work in `CIRISAI/ciris-response-magnifica-humanitas`). The prefix is `detection:correlated_action:{axis}` per [CIRISRegistry FSD-002 v1.2 §3.5.3](https://github.com/CIRISAI/CIRISRegistry/blob/main/FSD/FSD-002_FEDERATION_SURFACE.md); calibration source is **CIRISAI/RATCHET** (`calibration/correlated_action_v{N}.yaml`, versioned and hash-pinned, amendable via federation Contribution + WA quorum per FSD-002 §4.9.2).
+
+The detector reads federation-emitted signed traces and reports correlation structure (`ρ → 1`, `k_eff → 1`) over goal-aligned individually-compliant pursuit whose aggregate trajectory affects individuals or groups outside the pursuit. This is the natural extension of `detection:cross_agent_divergence` (detector #1 in the existing five) into the structural-injustice axis: same mechanism (population `ρ` measurement over signed traces), same calibration source, new dimension prefix.
+
+The earlier framing in `GAPS.md` v3 (now revised) that this would cross LensCore's substrate definition conflated impact measurement (correctly excluded — deaths averted, GDP delta) with federation-trace correlation structure (correctly in-scope — what the existing five detectors already do). The v1.2 wire-format rename from `emergent_deception` → `correlated_action` keeps the prefix mechanism-descriptive per the FSD-002 §1.10.1 safety-vs-censorship gate; the Ubuntu reading (structural harm and structural deception collapse into one moral object) stays in §3.5.3 prose without being wire-enforced.
+
+Downstream issues: [CIRISLensCore #23](https://github.com/CIRISAI/CIRISLensCore/issues/23) (detector ownership + implementation); [CIRISAI/RATCHET #2](https://github.com/CIRISAI/RATCHET/issues/2) (calibration package); [CIRISNodeCore #8](https://github.com/CIRISAI/CIRISNodeCore/issues/8) (composition with P8 Moderation, never sole evidence for `slashing:*`).
+
 ### `detector/` (WHO)
 
 **Mission:** make alignment-conformity measurable per-trace, per-agent,
@@ -98,8 +108,10 @@ per-cohort, per-federation. PoB §2.4 names N_eff as the
 independence-as-evidence primitive; coherence ratchet
 (`CIRISLens/FSD/coherence_ratchet_detection.md`) names five anomaly
 detectors (cross-agent divergence, intra-agent stability, hash-chain
-integrity, temporal drift, conscience-override pattern). Each is a
-function on cohort-routed trace populations.
+integrity, temporal drift, conscience-override pattern). The
+structural-injustice / correlated-action axis is the natural sixth
+extension per the cross-link above. Each detector is a function on
+cohort-routed trace populations.
 
 **Constraint:** layered defense — evading any one detector should be
 much cheaper than evading all five simultaneously (LC-AV-6's super-

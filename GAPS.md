@@ -269,7 +269,11 @@ The encyclical's family-as-constitutive concern is the same parent-child structu
 
 ### Gap F-1: Structural pattern analysis at federation layer
 
-**Status**: **DROPPED via PAPERING_OVER** per philosophical eval. The proposed enhancement (LensCore structural-pattern metrics) crossed from "measure the reasoning" to "measure the impact" — scope creep that contradicts LensCore's substrate definition. The need is real but the implementation venue is undetermined; possibly a new sibling repo.
+**Status**: **RE-ASSIGNED to CIRISLensCore** (revised per issue #2; corrects an earlier PAPERING_OVER framing).
+
+The earlier "scope-creep" objection conflated two different things. LensCore should NOT compute real-world impact metrics (deaths averted, GDP delta). LensCore SHOULD detect aggregate-correlation patterns in the federation's own signed traces — which is exactly what its existing five Coherence Ratchet detectors do by construction. The new dimension is the natural extension of detector #1 (`detection:cross_agent_divergence`) into the structural-injustice axis: same mechanism (population `ρ` measurement over signed traces), same calibration source (`CIRISAI/RATCHET`), new dimension prefix.
+
+The prefix is **`detection:correlated_action:{axis}`** (CIRISRegistry FSD-002 v1.2 §3.5.3 — renamed from the v1.1 `emergent_deception` per the §1.10.1 safety-vs-censorship gate; mechanism-descriptive wire vocabulary, with the moral reading in §1.10 prose). Calibrated via `CIRISAI/RATCHET/calibration/correlated_action_v{N}.yaml`, amendable through federation Contribution + WA quorum.
 
 ### Gap F-2: SOLITUDE-state heuristic-review cadence
 
@@ -277,17 +281,19 @@ The encyclical's family-as-constitutive concern is the same parent-child structu
 
 **Repo assignment**: CIRISAgent (verify).
 
-### Gap F-3: NEW — Structures of sin / institutional injustice analysis
+### Gap F-3: Structures of sin / institutional injustice analysis
 
-**Status**: `GAP_ACCORD` confirmed-persistent (newly surfaced in v2 Ch 1 mapping).
+**Status**: `GAP_ACCORD` confirmed-persistent at the doctrinal layer; **implementation venue resolved to CIRISLensCore** per FSD-002 v1.2.
 
 **Evidence**: MH §36, §§77–81. The encyclical treats AI-embedded structural injustice as a distinct moral category — patterns of harm that emerge from individually-PDMA-compliant actions in aggregate.
 
-**Operational shape**: PDMA is individual-action-scoped. Stakeholder analysis catches per-action affected parties. Aggregate / institutional-pattern detection is not in any of the seven layers.
+**Operational shape**: PDMA is individual-action-scoped. Stakeholder analysis catches per-action affected parties. Aggregate / institutional-pattern detection now has a federation wire-format home: **`detection:correlated_action:{axis}`** (CIRISRegistry FSD-002 v1.2 §3.5.3). LensCore reads federation-emitted signed traces and emits scalar attestations on this prefix; calibration via `CIRISAI/RATCHET/calibration/correlated_action_v{N}.yaml`. The detector reports correlation structure (`ρ → 1`, `k_eff → 1`) over goal-aligned individually-compliant pursuit whose aggregate trajectory has effects on individuals or groups outside the pursuit. Polarity carries the verdict; downstream consumers and WA quorum (NodeCore P8) decide what to do with the surfaced pattern.
 
-**Proposed enhancement**: Add PDMA extension naming institutional-pattern analysis as required Step 2 evaluation for ST ≥ 3 deployments. Implementation likely belongs in CIRISLens or a future sibling project (NOT in LensCore per F-1 scope-creep finding).
+**Naming discipline**: the v1.2 rename from `emergent_deception` → `correlated_action` per the §1.10.1 safety-vs-censorship gate keeps the wire format mechanism-descriptive (machine-checkable correlation collapse) rather than judgment-laden (subjective quality "deception"). The framework's Ubuntu reading — that structural harm and structural deception collapse into one moral object — stays in §3.5.3 prose without being wire-enforced.
 
-**Repo assignment**: ACCORD (PDMA Step 2), CIRISLens or new sibling.
+**Proposed Accord work that remains**: PDMA Step 2 extension naming institutional-pattern analysis as required evaluation for ST ≥ 3 deployments. The implementation surface (the LensCore detector + RATCHET calibration) is shipped; the doctrinal naming inside the Accord is the remaining work.
+
+**Repo assignment**: ACCORD (PDMA Step 2 extension); CIRISLensCore (detector ownership — see #23); CIRISAI/RATCHET (calibration package — see #2); CIRISNodeCore (composition with P8 Moderation — see #8).
 
 ---
 
