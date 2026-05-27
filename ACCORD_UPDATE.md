@@ -1,9 +1,11 @@
 # ACCORD_UPDATE — Proposed revisions to CIRIS Accord v1.2-Beta
 
-**Version**: 0.2 (proposal, not adopted)
+**Version**: 0.3 (proposal, not adopted; v0.2 body preserved below with v0.3 trio addendum at §13)
 **Status**: Draft — for review. The Accord auto-expires 2027-04-16 with a public comment window; this is input to that process.
-**Date**: 2026-05-25
-**Methodology**: Informed by `MAPPING_CH*.md` v2 (under `METHODOLOGY.md` 7-layer discipline), `GAPS.md` v3 (post v2.1 re-evaluations), `PHILOSOPHICAL_EVAL_*.md` (v1; pending refresh).
+**Date**: 2026-05-27
+**Methodology**: Informed by `MAPPING_CH*.md` v2 (under `METHODOLOGY.md` 7-layer discipline), `GAPS.md` v4 (with v1.4 trio-test addendum), `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`, `FOUR_BATCH_OVERLAP_ANALYSIS.md`, `TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`.
+
+**What's new in v0.3**: §13 trio addendum reflecting (a) which v0.2 proposals are now wire-supported in CIRISRegistry FSD-002 v1.3/v1.4 vs. which remain Accord-side work; (b) the four-batch overlap analysis confirming the framework's principle scaffolding is content-neutral across four institutional shapes; (c) the one cross-source conflict surfaced (CIRISMedical #1) with the federation-level categorical posture preserved.
 
 ---
 
@@ -284,4 +286,66 @@ G-1 Compute/energy as decision input was a v2.0 gap that v2.1 closed. The forwar
 - `ACCORD_canonical.txt` — v1.2-Beta the revisions amend
 - `MISSION_CIRIS*.md` — federation-peer MDD charters affected
 
-**End ACCORD_UPDATE.md v0.2 (proposal, not adopted)**
+**End ACCORD_UPDATE.md v0.2 body (proposal, not adopted)**
+
+---
+
+## 13. v0.3 trio-test addendum (2026-05-27)
+
+The v0.2 body above remains the operative proposal for Accord-side work. This addendum reports (a) which v0.2 proposals now have shipped wire-format support, (b) the four-batch content-neutrality result, (c) the cross-source conflict surfaced and its disposition, and (d) the v1.5+ candidate pipeline. None of (a-d) supersedes the v0.2 Accord-side proposals; they contextualize them.
+
+### 13.1 v0.2 proposals — shipping status update
+
+**Now wire-supported in CIRISRegistry FSD-002 v1.3/v1.4** (Accord-side work still owed, but the federation surface is no longer the blocker):
+
+| v0.2 § | Proposal | Wire shipped | Accord work remaining |
+|---|---|---|---|
+| §3.1 | A-1 Decision Locality | `locality:decision:{national,regional,federation}` | Accord clause naming the principle |
+| §6.4 | E-3 / §§219–223 culture-of-negotiation | (already noted as covered by NodeCore primitives) | Optional §V Ch 2 clause |
+| §7 | F-3 Structures of sin | `detection:correlated_action:{axis}` (LensCore-owned, RATCHET-calibrated) | PDMA Step 2 doctrinal extension |
+| §8.5 | E-4 + E-5 Multilateral participation | `multilateral_participation:{forum}:{kind}` (densely exercised in ASEAN §E — 10 distinct `:asean:{kind}` envelopes) | (none) |
+| §5.1 | D-1 Labor displacement | `testimonial_witness:displaced_worker` + `credits:*:substrate_building` | CIS schema refinement still helpful |
+| §8.1 | B-1 Benefit distribution | `detection:distributive:access:{resource_type}` operationalizes the equity-monitoring side | CIS field for predictive disclosure |
+
+**Remaining purely Accord-side work** (no federation-surface dependency): A-2 CIS market-position field; A-3 cross-jurisdictional WA quorum + Annex B extension; B-2 worst-case-population conscience faculty + PDMA step; B-3 beneficiary-horizons PDMA field; C-3 context-health PDMA Step 1 extension; C-4 educational ST modifier; D-2 agency-erosion conscience faculty; D-3/D-4 caregiving CIS field; D-5 documentation note; E-2 affected-party voice PDMA Step 6 + ledger.
+
+### 13.2 Four-batch content-neutrality result
+
+Per [`FOUR_BATCH_OVERLAP_ANALYSIS.md`](FOUR_BATCH_OVERLAP_ANALYSIS.md):
+
+The trio mapping (EU HLEG + IEEE EAD + ASEAN, added to the MH prototype) applied the v1.4 wire format to **four institutionally-distinct senior governance frameworks** — religious magisterium + governmental advisory + technical society + multilateral political body. Result:
+
+- **921 atomic units** translated; **~81% aggregate clean+composed** (per-batch range 73–93%)
+- **22 structural dimensions** show convergent attestation across all 4 / 3 of the 4 batches (16 STRONG-4, 6 STRONG-3)
+- **~0.5% conflict rate** — 1 direct cross-source conflict + 4 tensions; no silent averaging
+- **8 T-3 candidates** surfaced; 5 concentrated in IEEE EAD Ch5 Affective Computing as the manifest predicted
+
+This is the **load-bearing structural-evidence claim** the Accord update process can carry: the framework's principle scaffolding is not an artifact of any one tradition, and convergent attestations come from institutionally-distinct sources by design. **The claim is bounded**: convergence is on structural concerns, not on propositional agreement or equal strength of obligation (see Phase 4 calibration findings — five recurring loss patterns including modal-strength compression / softness-erosion).
+
+### 13.3 Cross-source conflict — IEEE EAD vs. CIRIS on therapeutic deception
+
+**The conflict**: IEEE EAD Ch5 §3.4 Recommendations 1-2 (p.101) permit licensure-gated beneficiary-deception in narrow contexts — "search and rescue operations or for elder- or child-care." CIRIS treats `prohibited:DECEPTION_FRAUD` as categorical (`-1.0 / constitutional`). Three of four senior frameworks (MH + EU HLEG + ASEAN) converge on categorical prohibition; IEEE EAD is the outlier.
+
+**Disposition**:
+- **Federation-level categorical posture stays.** The Accord's `prohibited:DECEPTION_FRAUD` is not amended.
+- **Specialization-layer consideration** filed at **[CIRISMedical #1](https://github.com/CIRISAI/CIRISMedical/issues/1)**. If the CIRISMedical team determines that therapeutic beneficiary-deception (placebo with debrief; reality-orientation vs. validation in dementia care; pediatric distraction during procedures) warrants a narrow medical-specialization carve-out, that carve-out lives at the CIRISMedical layer with required composition partners (`licensure:medical_professional` + `beneficiary:patient` + `consent:proxy_or_capacity_limited` + `reconsideration:debrief_protocol` + `testimonial_witness:clinical_ethics_committee`).
+- **The Accord need not act**. The layered architecture is designed exactly for this — federation-level absolutes + specialization-level scope-bound exceptions.
+
+### 13.4 v1.5+ candidate pipeline (Accord-side relevance)
+
+Of the 9 T-3 candidates surfaced by the trio:
+- **No Accord-doctrinal changes are implied** by any of the 9 candidates. They are wire-format expressivity questions, not principle-layer questions.
+- **The cross-source-reinforced `goal:planet`** (MH + IEEE EAD Ch4/Ch8) is the most Accord-adjacent — it extends an existing `goal:{scale}` family with a new value. If adopted at v1.5, MH §101 + IEEE EAD Ch8 alignment becomes more direct, but no Accord clause is owed.
+- **The 5 IEEE EAD Ch5 Affective Computing candidates** (`affective_state_shift:*`, `asymmetric_bond_formation:*`, `nudge:delivered:*`, `cultural_norm_drift:*`, `moral_patient_candidacy:*`) are likely wire-format additions only — they extend expressive capacity without redefining principles.
+
+The Phase 4 audit additionally identified **five ergonomic considerations** for v1.5+ workshop discussion (two-primitive-cap, conditional/enabling-clause primitive, soft-modal preservation field, diagnostic-vs-prescriptive paragraph tag, principle-level compositional alias). See [`TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`](TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md) §5.2. These are CIRISRegistry-side questions, not Accord-side.
+
+### 13.5 Status after v0.3
+
+- v0.2 body remains the authoritative proposal-set for Accord-side work
+- The federation-surface dependency that was implicit in many v0.2 proposals has been resolved by v1.3/v1.4 shipping
+- The trio test confirms the v1.4 wire format is content-neutral across four institutional shapes
+- One cross-source conflict surfaced; specialization-layer disposition filed
+- v1.5+ candidate pipeline is Registry-side, not Accord-side
+
+**End ACCORD_UPDATE.md v0.3 trio addendum**

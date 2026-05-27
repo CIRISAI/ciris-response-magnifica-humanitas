@@ -1,9 +1,29 @@
 # GAPS.md — Consolidated Findings and Proposed Enhancements
 
-**Version**: 3.0
-**Date**: 2026-05-25
-**Status**: Locked — reflects v2 chapter mapping (under METHODOLOGY.md 7-layer discipline) plus v2.1 re-evaluation of four items.
-**Methodology**: See `METHODOLOGY.md` and `MISSION.md` §1.3.
+**Version**: 4.0
+**Date**: 2026-05-27
+**Status**: v3 body preserved below; v4 trio-test addendum added at §11. Most v3 doctrinal gaps now have shipped wire-format support in CIRISRegistry FSD-002 v1.3/v1.4; the surviving Accord-level work is documentation/principle naming, not new architecture.
+**Methodology**: See `METHODOLOGY.md`, `MISSION.md` §1.3, `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`.
+
+---
+
+## v4 — what's new (read this first)
+
+The v3 gap list (locked 2026-05-25) was the input to two subsequent waves of work:
+
+1. **CIRISRegistry FSD-002 v1.3 and v1.4** shipped wire-format additions driven directly by the MH mapping:
+   - `locality:decision:{scale}` — A-1 Decision Locality operational handle (Accord clause still owed)
+   - `detection:distributive:access:{resource_type}` — B-1 Benefit-Distribution operational handle
+   - `multilateral_participation:{forum}:{kind}` — E-4 Multilateral Participation operational handle (E-5 cyber-diplomacy folds in)
+   - `testimonial_witness:{kind}` (incl. `:displaced_worker`) + `credits:*:substrate_building` — D-1 Labor-Displacement substrate-building operational handle
+   - `detection:correlated_action:{axis}` (incl. `ecology_of_communication`) — F-3 Structures-of-Sin operational handle (already noted in v3 §6 F-3)
+   - `agent_files:*`, `holds_bytes:*`, `witness_relation` envelope field, §6.1.4 lexical-vulnerability-priority policy, §2.2.1 `delegates_to` authority-source reuse pattern
+
+   So **gaps A-1, B-1, D-1, E-4, E-5 now have shipped wire-format support**; the surviving Accord-level work is the doctrinal naming inside the Accord itself, not new federation infrastructure. See §11 for per-gap status updates.
+
+2. **The trio mapping test** (per `GOVERNANCE_FABRIC_MAPPING_STANDARD §7.5`) applied the v1.4 wire format to three more institutionally-distinct senior documents (EU HLEG, IEEE EAD, ASEAN). The result is the load-bearing content-neutrality verification for the v1.4 surface — see §11.
+
+The v3 body below remains the authoritative gap-by-gap record. §11 layers on top: shipping status, trio-confirmation, and new v1.5+ T-3 candidates surfaced by IEEE EAD.
 
 ---
 
@@ -378,7 +398,94 @@ The prefix is **`detection:correlated_action:{axis}`** (CIRISRegistry FSD-002 v1
 - `METHODOLOGY.md` — the v2 seven-layer discipline, confirmed-persistent gap list, re-evaluation lessons
 - `MAPPING_CH*.md` — v2 chapter mappings (under METHODOLOGY.md discipline)
 - `PHILOSOPHICAL_EVAL_*.md` — per-repo MISSION evaluations (some v1-era; pending refresh)
-- `ACCORD_UPDATE.md` — proposed Accord revisions (v0.2 forthcoming with v3 alignment)
+- `ACCORD_UPDATE.md` — proposed Accord revisions (v0.2 with v3 alignment; v0.3 trio addendum)
 - `ACCORD_canonical.txt` — v1.2-Beta
 
-**End GAPS.md v3.0**
+**End GAPS.md v3.0 body**
+
+---
+
+## 11. v1.4 trio-test addendum (v4 layer; 2026-05-27)
+
+The v3 body is preserved above unchanged. This section reports (a) the shipping status of each v3 gap after CIRISRegistry FSD-002 v1.3 and v1.4 landed, and (b) the trio-mapping result confirming v1.4 content-neutrality across four institutional shapes. Source: [`FOUR_BATCH_OVERLAP_ANALYSIS.md`](FOUR_BATCH_OVERLAP_ANALYSIS.md), [`TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`](TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md).
+
+### 11.1 Per-gap shipping status update
+
+| v3 gap | v3 status | Wire shipped in v1.3/v1.4? | Accord work remaining |
+|---|---|---|---|
+| **A-1** Decision Locality | `GAP_ACCORD` | **Yes** — `locality:decision:{scale}` (national/regional/federation) | Accord clause naming the principle (still owed) |
+| **A-2** Power-Concentration Disclosure | `GAP_ACCORD` | No (CIS field, not federation surface) | CIS schema extension (§3.2 in ACCORD_UPDATE.md) |
+| **A-3** Cross-jurisdiction WA quorum | `GAP_ACCORD` + `GAP_IMPL` | Partial — `multilateral_participation:*` adjacent | Annex B extension + CIRISNodeCore registry |
+| **B-1** Benefit-Distribution Disclosure | `GAP_ACCORD` | **Yes** — `detection:distributive:access:{resource_type}` operationalizes the equity-monitoring side | CIS field still owed for predictive disclosure |
+| **B-2** Worst-Case Population Check | `GAP_ACCORD` | No — PDMA-internal | PDMA step + conscience faculty |
+| **B-3** Beneficiary horizons | `WEAK_ALIGN` | No — PDMA-internal | PDMA result field |
+| **C-1** Information ecosystem | CLOSED | Already closed in v3 | (none) |
+| **C-2** Exploitative engagement | CLOSED at prohibitions | Already closed in v3 | (none) |
+| **C-3** Context-health disclosure | `GAP_ACCORD` | No — PDMA-internal | PDMA Step 1 extension |
+| **C-4** Educational ST modifier | `WEAK_ALIGN` | No — ST formula | Book VI Ch 3 |
+| **D-1** Labor-displacement | `WEAK_ALIGN` | **Yes** — `testimonial_witness:displaced_worker` + `credits:*:substrate_building` | CIS schema refinement still helpful |
+| **D-2** Sub-threshold agency erosion | `WEAK_ALIGN` | No — conscience faculty | New conscience faculty |
+| **D-3/D-4** Care relationship disclosure | `WEAK_ALIGN` | Partial — `testimonial_witness:*` adjacent | CIS field |
+| **D-5** Family as constitutive | `STRONG_ALIGN` | (no new surface owed; Book VI Ch 4.D already covers) | Documentation note |
+| **E-1** Discourse de-escalation | CLOSED | Already closed in v3 | (none) |
+| **E-2** Affected-party voice | `WEAK_ALIGN` | Partial — `testimonial_witness:*` + `witness_relation` field | PDMA Step 6 + ledger |
+| **E-3** Dialogue as negotiation | `WEAK_ALIGN` | (already covered by NodeCore primitives) | Optional Accord clause |
+| **E-4** Multilateral participation | `GAP_IMPL` | **Yes** — `multilateral_participation:{forum}:{kind}` (exercised densely in ASEAN §E mapping; 10 distinct `:asean:{kind}` envelopes) | (none — shipped) |
+| **E-5** Cyber-diplomacy | `GAP_IMPL` | **Yes** — folds into E-4 | (none) |
+| **F-1** Structural pattern analysis | RE-ASSIGNED | **Yes** — `detection:correlated_action:{axis}` (LensCore-owned, RATCHET-calibrated) | (none) |
+| **F-2** SOLITUDE-state heuristic-review | `UNCLEAR` | (not wire-format scope) | CIRISAgent verify |
+| **F-3** Structures of sin | `GAP_ACCORD` doctrinal | **Yes** at impl — `detection:correlated_action:*` (FSD-002 §3.5.3) | PDMA Step 2 doctrinal extension still owed |
+| **G-1** Compute/energy accounting | CLOSED | Already closed in v3 | (none) |
+
+**Headline**: 11 of the 22 v3 gaps now have shipped wire-format support; **all 11 are confirmed clean+composed by at least one trio batch** (i.e., the wire surface added for MH translates the other three documents' analogous claims without further extension). Six gaps remain doctrinal-only (PDMA prompt / conscience faculty / Accord clause); none surfaced new T-3 candidates in the trio test.
+
+### 11.2 v1.4 wire format — trio content-neutrality result
+
+Per [`FOUR_BATCH_OVERLAP_ANALYSIS.md`](FOUR_BATCH_OVERLAP_ANALYSIS.md):
+
+- **921 atomic units** across the 4 batches; **~81% aggregate clean+composed** (per-batch range 73–93%)
+- **22 STRONG-tier prefix families** (16 STRONG-4 attested by all 4 batches; 6 STRONG-3 attested by 3)
+- **~0.5% conflict rate** — 1 direct cross-source conflict + 4 mutability/scope tensions
+- **8 T-3 candidates surfaced** (vs. zero new T-3 from MH and EU HLEG and ASEAN; 5 of the 8 from IEEE EAD Ch5 Affective Computing as the manifest predicted)
+
+The framework's principle scaffolding is **not an artifact of any one tradition** — convergent attestations from four institutionally-distinct sources (religious magisterium + governmental advisory + technical society + multilateral political body) on 22 structural dimensions. See [`TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`](TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md) for the load-bearing bounding: convergence is on *structural concerns*, not on *propositional agreement* or *equal strength of obligation*.
+
+### 11.3 New T-3 candidates surfaced (v1.5+ pipeline)
+
+These are documented v1.5+ candidates; **none are urgent** (composition-before-extension holds for all current operational claims). Filed for Registry-side workshop consideration:
+
+| # | Prefix candidate | Source | Priority | Notes |
+|---|---|---|---|---|
+| 1 | `detection:affective_state_shift:{axis}` | IEEE EAD Ch5 §0.b, §4.2, §4.3 | HIGH | Three sections frame this as central. No current `affective:*` family. |
+| 2 | `affective:asymmetric_bond_formation:{relation}` | IEEE EAD Ch5 §2.1 (Scheutz literature) | HIGH | Unidirectional emotional-bond formation between users and A/IS |
+| 3 | `nudge:delivered:{intended_behavior_axis}` | IEEE EAD Ch5 §3 | HIGH | Chapter explicitly recommends per-nudge wire-attestable records |
+| 4 | `detection:correlated_action:cultural_norm_drift:{population}` | IEEE EAD Ch5 | MED | Likely closeable as axis extension on existing `ecology_of_communication:*` |
+| 5 | `standing:moral_patient_candidacy:{kind}` | IEEE EAD Ch5 | MED-LOW | T2 gate concern; recommended for closure-by-documentation as cross-source-conflict |
+| 6 | `goal:planet` (new `{scale}` value in existing `goal:{scale}` family) | MH + IEEE EAD Ch4 + Ch8 (REINFORCED) | MED | Cross-source reinforced; small surface |
+| 7 | `partner_role:trusted_disclosure_steward:{authority}` | IEEE EAD Ch11 §I6.r4 | MED | Single-source; composition holds but fragile |
+| 8 | `partner_role:regional_intergovernmental_working_group_dual_remit` | ASEAN §E.001 | MED | Single-source; cross-comparison with IEEE EAD partner_role specialization patterns suggests a broader specialization-pattern family proposal might serve better than per-role prefixes |
+| 9 | `beneficence:planetary_biosystem_intrinsic_value` (or new `cohort_scope: biosphere` value) | IEEE EAD Ch4 §1.3.a | LOW | Composition via existing `cohort_scope` enum extension preferred |
+
+### 11.4 Calibration findings — v1.5+ ergonomic considerations
+
+The Phase 4 translation-quality audit identified **five recurring loss patterns** that may suggest v1.5+ wire-format ergonomic refinements. Documented for workshop consideration; none are urgent:
+
+1. **Two-primitive-cap relaxation** for enumeration-dense paragraphs — current cap forces granular axes into context fields
+2. **Conditional/enabling-clause structural primitive** (e.g., `conditional_on:{predicate}` linker between attestations) — recovers carve-out structure that currently requires multi-attestation reading
+3. **Soft-modal preservation field** — explicit deontic-strength axis distinct from polarity, to address the confirmed ASEAN softness-erosion pattern
+4. **Diagnostic-vs-prescriptive paragraph type tag** — pre-classification to prevent polarity inversion (most acute MH issue)
+5. **Compositional alias for principle-level naming** — to preserve unified-principle reading where source taxonomy differs from CIRIS (e.g., EU HLEG "Explicability" composed across CIRIS `integrity:*` + `fidelity:*` + `transparency_log:*`)
+
+### 11.5 Cross-source conflict (load-bearing diagnostic)
+
+**IEEE EAD Ch5 §3.4** (Recommendations 1-2, p.101): permits licensure-gated beneficiary-deception in narrow contexts (search/rescue, elder/child-care). CIRIS treats `DECEPTION_FRAUD` as categorical (`-1.0 / constitutional`). Three of four senior frameworks (MH + EU HLEG + ASEAN) converge on categorical prohibition; IEEE EAD is the outlier. The outlier-ness lives specifically in healthcare-adjacent contexts.
+
+**Disposition**: federation-level categorical posture stays. Specialization-layer carve-out filed for consideration at **[CIRISMedical #1](https://github.com/CIRISAI/CIRISMedical/issues/1)**. The wire format honestly surfaces the disagreement rather than silently averaging into false consensus.
+
+### 11.6 Status after v4 addendum
+
+- **Doctrinal gaps that remain after v1.4**: A-1 clause naming; A-2 CIS field; A-3 Accord+Registry; B-1 CIS field; B-2 PDMA step + conscience; B-3 PDMA field; C-3 PDMA Step 1 extension; C-4 ST modifier; D-1 CIS refinement; D-2 conscience faculty; D-3/D-4 CIS field; D-5 documentation note; E-2 PDMA Step 6 + ledger; F-2 verify; F-3 PDMA Step 2 extension.
+- **What's NOT a remaining gap** (clarification): the wire-format surface for the structural-injustice / multilateral-participation / labor-displacement / locality-of-decision concerns. These shipped in v1.3/v1.4; the trio test confirms they're content-neutral across institutional shapes.
+- **v1.5+ pipeline**: 9 T-3 candidates from the trio (5 from IEEE EAD Ch5 are the operational core) + 5 ergonomic considerations.
+
+**End GAPS.md v4.0 trio addendum**
