@@ -192,6 +192,55 @@ The pattern generalizes: when a sub-agent produces a finding, the human reviewer
 
 ---
 
+## 8.5 Round-2-to-round-3 lessons (contribution-conversion specific)
+
+The contribution-conversion work (translating encyclical paragraphs into wire-format Contribution objects under the FSD-002 namespace) is structurally different from the earlier structural-mapping work and surfaced its own discipline issues. These additions to the methodology capture what round 3 fixed.
+
+### 8.5.1 Wire-format sync discipline
+
+When the wire format (FSD-002) updates, the local translation primer must be synced from the authoritative Registry-side source *before* any sub-agent fan-out. Round 2 wrote a local primer v2 that contained two load-bearing drifts from the canonical wire-format spec:
+
+- **The four structural primitives mislabeled** — round-2 primer named them as pedagogical patterns (Witnessed / Delegated / Time-stamped / Hash-pinned) when the actual `attestation_type` values per FSD-002 §2.2 are `delegates_to` / `supersedes` / `withdraws` / `recants`. Sub-agents reading round-2 primer could not see three of the four. Doctrinal-development claims that should translate to `supersedes` were either mis-typed or rendered as `delegates_to`.
+- **The eight axes substantially wrong** — round-2 primer listed Polarity / Subject / Substrate / Score-shape / Mutability / Cohort-scope / Verifiability / Reservation-discipline; canonical per FSD-002 §1.1–§1.8 is Polarity / Object / Time / Epistemic-mode / Reversibility / Stake / Scope / Inter-attestation-relations. Sub-agents missed `valid_until` (Time), `stake`, the full epistemic-mode field, and inter-attestation-relation composition.
+
+Round-3 corrective: **the local `LANGUAGE_PRIMER.md` is a working copy synced from `CIRISRegistry/FSD/LANGUAGE_PRIMER.md` v1.1 (commit `c232a60`)** with an explicit sync-pointer header. Drift from the source = bug in the local file. Re-sync is one `cp` command.
+
+**Discipline going forward**: at the start of any contribution-conversion round, verify the local primer matches the latest Registry-side primer. Stale-primer-detection is part of the round prep, not a discovery during sub-agent output review.
+
+### 8.5.2 Composition-before-extension
+
+Before classifying a paragraph as T-3 EXPRESSIVE_GAP and proposing a new prefix, attempt **closed-by-documentation composition** using existing primitives. Many gaps close this way — `labor:individual_loss` closed through composition (`non_maleficence:*` with `target_key_id = affected_individual` + `cohort_scope: self` + `testimonial_witness:displaced_worker`), not a new prefix.
+
+The four-test §1.10.1 prefix-admission gate is intentionally hard to pass; that hardness exists to keep the namespace small. Composition is the framework's preferred response to expressive friction.
+
+Mandatory check before any T-3 emission: *can I assemble this claim from existing prefixes plus the four structural primitives (`delegates_to` / `supersedes` / `withdraws` / `recants`) plus the envelope fields?* If yes → COMPOSED, not T-3.
+
+### 8.5.3 In-flight work staleness rule
+
+When wire format updates land (e.g., v1.3 → v1.4), prior contribution-mapping work must be **re-evaluated for T-3 NOT-TRANSLATED rows that the new surface admits**. Round 2's `testimonial_witness` gap was correctly identified as a load-bearing T-3 with a proposed extension. v1.4 shipped that prefix at `NodeCore §3.6.3`. Round-2 outputs that marked §216-style paragraphs as T-3 NOT-TRANSLATED are now stale — those paragraphs translate CLEAN under v1.4.
+
+**Discipline**: on any wire-format version bump, audit prior translation work's T-3 NOT-TRANSLATED rows; reclassify any that the new surface closes. This applies recursively — v1.5 will produce the same audit obligation against v1.4 T-3s, etc.
+
+### 8.5.4 Namespace-count integrity
+
+Canonical count comes from the authoritative source, not from locally summed additions. v1.3's "78 prefix families" was off-by-one because `credits:*:substrate_building` was miscounted as a new prefix family instead of a recommended `{subject}` value within the existing `credits:*` family. v1.4 corrected to 80 (= 77 v1.3 base post-O3 correction + 3 v1.4 new).
+
+**Discipline**: when documenting namespace state, cite the authoritative FSD-002 §3.10 count, not an additive estimate. Methodology requires verification against the canonical source.
+
+### 8.5.5 Prompt synchronization gate
+
+When the primer is updated, sub-agent prompts that reference primer sections must be updated synchronously. Round-2 prompts referencing primer §9 worked-examples were valid against round-2 primer (which had 10 worked examples) but would mis-direct sub-agents reading round-3 primer (which has 15 worked examples and different numbering). Stale section references cause sub-agents to read the right text under the wrong headers, producing classification confusion.
+
+**Discipline**: when re-synced primer is committed, audit any draft sub-agent prompts for section references and update them before fan-out. This is a small mechanical check that prevents a class of subtle errors.
+
+### 8.5.6 The cleanup-and-redo pattern
+
+When primer-drift is detected at scale, the cleanest move is to **delete prior contribution-mapping outputs and re-run** rather than patch them row-by-row. Round 3 deleted 14 files (7 round-1 mapping tables + 7 round-2 contribution-object files + 2 syntheses) and re-ran under the corrected primer. Git history preserves the deleted work; the public repo state reflects the corrected understanding.
+
+This is the discipline of **honest replacement over silent patching**. The commit history shows the replacement; the current state is what the framework actually claims.
+
+---
+
 ## 9. What this means for the public repo
 
 The public repo (`CIRISAI/ciris-response-magnifica-humanitas`) currently reflects the v1 first pass. The README already names it as a first pass and invites correction. This methodology document is the v2 standard; mapping output produced under it should replace the v1 output where they disagree.
