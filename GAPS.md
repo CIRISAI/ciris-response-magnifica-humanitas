@@ -493,3 +493,18 @@ The Phase 4 translation-quality audit identified **five recurring loss patterns*
 - **v1.5+ pipeline**: 9 T-3 candidates from the trio (5 from IEEE EAD Ch5 are the operational core) + 5 ergonomic considerations.
 
 **End GAPS.md v4.0 trio addendum**
+
+---
+
+## 12. v4.1 — Canonical seed published (2026-05-27)
+
+The 27 structural-evidence dimensions catalogued in §11 are now formalized as a canonical machine-readable seed: [`SEED_DIMENSIONS.yaml`](SEED_DIMENSIONS.yaml).
+
+The seed is the source of truth for three downstream artifacts:
+- **Runtime Contribution `evidence_refs`** — federation envelopes cite the dimension(s) they instantiate by stable id (D01-D27); the seed resolves each id to the parent regulatory attestation chain
+- **CIRIS Agent per-dimension compliance documentation** — each dimension's `ciris_compliance` block points at the code/policy surface that implements compliance with that dimension (currently `pending` for all 27 — to be filled via per-dimension stub PRs against CIRISAgent)
+- **Accord Annex K (regulatory cross-walk)** — see ACCORD_UPDATE.md §14; deterministic render of the seed
+
+The seed makes the chain object → mechanism → monitor mechanistic: any CIRIS Agent runtime decision becomes a multi-source-attested compliance event whose provenance resolves through the seed back to the original senior governance framework that requires the structural concern.
+
+**End GAPS.md v4.1**

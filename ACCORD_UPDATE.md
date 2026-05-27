@@ -353,3 +353,68 @@ The Phase 4 audit additionally identified **five ergonomic considerations** for 
 - v1.5+ candidate pipeline is Registry-side, not Accord-side
 
 **End ACCORD_UPDATE.md v0.3 trio addendum**
+
+---
+
+## 14. NEW — Proposed Accord Annex K: Regulatory Cross-Walk
+
+The trio mapping produced a canonical seed — [`SEED_DIMENSIONS.yaml`](SEED_DIMENSIONS.yaml) — that catalogs the 27 structural-evidence dimensions with full per-dimension regulatory-attestation chains. This seed should serve as the source of truth for a new Accord annex.
+
+### 14.1 Proposed Annex K — Regulatory Cross-Walk
+
+> "The Accord is one expression of principles that are independently articulated by senior secular and religious governance frameworks. Annex K catalogs this convergence: for each of the six Accord principles, the operative dimensions through which the principle is implemented in the federation, and the parent regulatory frameworks that independently attest each dimension. The cross-walk is structural evidence that the Accord's principle scaffolding is not an artifact of any one tradition. Annex K is machine-generated from `SEED_DIMENSIONS.yaml`; the seed updates as new senior governance frameworks are mapped per `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`."
+
+### 14.2 Rendering
+
+Annex K is a deterministic render of the seed's `aggregate_indices.by_accord_principle` traversal followed by per-dimension `regulatory_attestations` enumeration. The render template (proposed):
+
+```
+Annex K — Regulatory Cross-Walk
+================================
+
+K.1 Beneficence (Accord Principle 1)
+  Dimensions: D06 goal:* + D10 beneficence:*
+  Cross-walked sources:
+    D06 goal:multi-scale-belonging
+      - magnifica_humanitas_v1 §§148-156: labor as integral to belonging
+      - eu_hleg_v1 §A: Trustworthy AI for Europe
+      - ieee_ead_v1 Ch4 §0.a: well-being of all humans
+      - asean_guide_v1 §A: regional ecosystem belonging
+    D10 beneficence:positive-duty-toward-dignity
+      - magnifica_humanitas_v1 §§110-111: technology as creation-participation
+      - eu_hleg_v1 Unit 005: respect for human dignity
+      - ieee_ead_v1 Ch4 §0: well-being holistic orientation
+      - asean_guide_v1 §C.3: environmental stewardship
+
+K.2 Non-Maleficence (Accord Principle 2)
+  Dimensions: D01 non_maleficence:* + D04 prohibited:*
+  ...
+
+[etc. for K.3-K.6 across Integrity, Fidelity, Autonomy, Justice]
+```
+
+### 14.3 Update discipline
+
+Annex K is maintained through the seed:
+- New senior governance document mapped → Phase 1-4 per the standard → seed updated → Annex K re-rendered (deterministic).
+- Stable dimension IDs (D01-D27, with D28+ for future additions) ensure Annex K citation references remain valid across seed revisions.
+- The Accord text references "Annex K, as generated from `SEED_DIMENSIONS.yaml` v{N}" so the binding is explicit and versioned.
+
+### 14.4 What Annex K does NOT do
+
+- It does NOT bind the Accord to external regulatory frameworks. The Accord's principles are CIRIS's own; the cross-walk is structural evidence of convergence, not delegation of authority.
+- It does NOT silently average the parent sources. Per Phase 4 calibration findings ([`TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`](TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md)), modal-strength compression and softness-erosion are real translation costs; Annex K names the convergence on structural concern, not propositional equivalence.
+- It does NOT supersede the operative Accord principles. The principles remain the load-bearing claim; the cross-walk is supporting structural evidence.
+
+### 14.5 Implementation status
+
+| Item | Status |
+|---|---|
+| Seed (`SEED_DIMENSIONS.yaml`) | Shipped at seed_version 1.0 |
+| Annex K text proposal | This §14 |
+| Annex K render tooling | Pending |
+| Accord §V references to Annex K | Pending Accord adoption |
+| Per-dimension `ciris_compliance` field population | Pending CIRISAgent per-dimension stub PRs |
+| Per-dimension `monitors` field population | Pending CIRISLensCore + CIRISAI/RATCHET binding work |
+
+**End §14**

@@ -126,8 +126,10 @@ Recommended reading order:
    - ASEAN Guide: `CONTRIBUTION_OBJECTS_ASEAN_*.md` (5 files)
 7. **[FOUR_BATCH_OVERLAP_ANALYSIS.md](FOUR_BATCH_OVERLAP_ANALYSIS.md)** — Phase 3 cross-comparison (the structural-evidence artifact)
 8. **[TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md](TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md)** + per-batch `TRANSLATION_AUDIT_*.md` — Phase 4 calibration of translation faithfulness
-9. **[GAPS.md](GAPS.md)** — Consolidated findings (gap-by-gap status; v4 trio addendum at §11)
-10. **[ACCORD_UPDATE.md](ACCORD_UPDATE.md)** — Proposed revisions to the CIRIS Accord; v0.3 trio addendum at §13
+9. **[DIMENSIONS_GUIDE.md](DIMENSIONS_GUIDE.md)** — Quick reference to the 27 structural-evidence dimensions
+10. **[SEED_DIMENSIONS.yaml](SEED_DIMENSIONS.yaml)** — Canonical machine-readable seed; source of truth for (a) federation runtime Contribution `evidence_refs`, (b) CIRIS Agent per-dimension compliance docs, (c) Accord regulatory cross-walk annex
+11. **[GAPS.md](GAPS.md)** — Consolidated findings (gap-by-gap status; v4 trio addendum at §11)
+12. **[ACCORD_UPDATE.md](ACCORD_UPDATE.md)** — Proposed revisions to the CIRIS Accord; v0.3 trio addendum at §13; Annex K cross-walk at §14
 
 Source materials live under `source_material/governance/{batch_id}/` with per-batch `manifest.yaml`. The third-party document content itself is gitignored (not republished); the manifests are tracked.
 
