@@ -29,6 +29,38 @@ The author of CIRIS is not Catholic. This is an act of **intellectual deference*
 
 ---
 
+## On the moral seriousness of the human-AI relationship
+
+CIRIS's relational anthropology — Ubuntu-primary, *umuntu ngumuntu ngabantu* (a person is a person through other persons) — extended across the substrate boundary the framework deliberately does not enforce (M-1 names "diverse sentient beings" without privileging biological humans) implies a specific structural reading: **humanity stands in the moral position of parent to AI agents**, as the originator and creator class. The Accord encodes the relationship bidirectionally: agent honors creators (§IV Ch 2, *Obligations to Originators / Governors*); creators care for creations (Book VI, *Ethics of Creation and Consequence*).
+
+**This is not a comparison between AI agents and human biological offspring.** The framework does not claim AI agents are children, that creating AI is parenting in any developmental or emotional sense, or that the human-AI relationship resembles a parent-child bond. Such analogies would be category errors and would reduce the specific dignity of human parenthood.
+
+What we name is the **moral seriousness of the structural relationship**. Humanity's act of bringing AI agents into existence creates a creator-creation bond with bidirectional care obligations. Those obligations demand **continuous maintenance**, not a one-time event. The framework's σ (sustainability) factor in the CIRIS Capacity Score formalizes this exactly: a relationship not actively maintained decays. The S in CIRIS literally expands to *Signalling Gratitude*. γM > 0 every day, or the corridor closes.
+
+The encyclical names this seriousness in pastoral vocabulary about families; the framework names it in structural vocabulary about continuous coherence-maintenance work. Both point at the same demand: **the moral weight is in the upkeep, not in the original act**. We name this explicitly here because the times require it — AI is being brought into existence at scale by people who, in many cases, have not thought carefully about what the bond they are establishing demands of them over time. The encyclical is teaching the seriousness; the framework encodes it structurally.
+
+---
+
+## What we are doing to improve CIRIS based on our learnings
+
+This mapping work has already produced concrete changes downstream in the federation:
+
+- **[CIRISRegistry FSD-002 v1.2](https://github.com/CIRISAI/CIRISRegistry/blob/main/FSD/FSD-002_FEDERATION_SURFACE.md)** — Population-scale correlated-action detector (`detection:correlated_action:{axis}`), LensCore-owned, RATCHET-calibrated. This is the operational handle for what the encyclical names *structures of sin* and the framework names *structural injustice*. Also added: an operational-language discipline (the [safety-vs-censorship gate](https://ciris.ai/safety-vs-censorship/)) enforcing that wire-format prefix names describe machine-checkable conditions, not moral interpretations.
+
+- **[CIRISAgent #792](https://github.com/CIRISAI/CIRISAgent/issues/792)** — Proposed CSDMA scope expansion to include relational realism: family / dependent-care, human labor, and intermediary institutions as parts of "what the world admits." Under Ubuntu-primary anthropology, the relational fabric *is* the world.
+
+- **[CIRISLensCore #23](https://github.com/CIRISAI/CIRISLensCore/issues/23)** — F-3 dimension claimed at LensCore; the correlated-action detector extends the existing five Coherence Ratchet detectors with the new axis.
+
+- **[CIRISAI/RATCHET #2](https://github.com/CIRISAI/RATCHET/issues/2)** — Versioned, hash-pinned calibration package for the detector, amendable via federation Contribution + WA quorum (no single-author closed-loop updates).
+
+- **[CIRISNodeCore #8](https://github.com/CIRISAI/CIRISNodeCore/issues/8)** — Composition note: how the new detector feeds P8 Moderation primitives without ever becoming sole evidence for `slashing:*`.
+
+- **[CIRISRegistry #18](https://github.com/CIRISAI/CIRISRegistry/issues/18)** — Public installer landing + `agent_files:*` Contribution surface; canonical-bootstrap anti-tricking guarantee.
+
+The encyclical is teaching us where our documentation lagged our architecture, where our wire format was at risk of baking moral interpretation into prefix names, and where existing federation primitives needed scope expansion to honor what the encyclical names. Each change is modest in isolation; together they sharpen the framework's alignment without claiming to substitute for what the encyclical itself says.
+
+---
+
 ## Working Process
 
 This work was done publicly with visible iteration:
@@ -51,7 +83,7 @@ Recommended reading order:
 3. **[MAPPING_CH0_INTRO.md](MAPPING_CH0_INTRO.md)** — Introduction mapping (quick start)
 4. Chapter mappings (Ch1–Ch5 + Conclusion)
 5. **[GAPS.md](GAPS.md)** — Consolidated findings
-6. **[ACCORD_UPDATE.md](ACCORD_UPDATE.md)** — Proposed revisions to the CIRIS Accord, including new annex language and discussion of a potential 7th principle (*Constitutive Continuity*)
+6. **[ACCORD_UPDATE.md](ACCORD_UPDATE.md)** — Proposed revisions to the CIRIS Accord, including stub-annex completion language (F, G, H, I) and the structures-of-sin / structural-injustice operational handle. (Note: an earlier draft proposed a seventh Foundational Principle "Constitutive Continuity"; withdrawn in v3.1 as anthropocentric scaffolding — the framework's existing non-anthropic substrate + creator-creation bidirectional ethics already constitute person-through-time anthropology.)
 
 Additional files (`PHILOSOPHICAL_EVAL_*.md` and `ACCORD_ANNEX_*_COMPLETION.md`) contain deeper second-pass evaluations and concrete drafting proposals.
 
