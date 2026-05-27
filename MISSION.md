@@ -6,13 +6,7 @@
 **Date**: 2026-05-25
 **Working directory**: `/home/emoore/accord_updates`
 
-This document is the grounding for a three-column line-by-line mapping
-between (1) Pope Leo XIV's words in *Magnifica Humanitas*, (2) the
-CIRIS Accord, and (3) the framework implementation across the
-federation repos. The mapping itself will live in companion documents
-(`MAPPING_CH0_INTRO.md`, `MAPPING_CH1_DOCTRINE.md`, etc., one per
-encyclical chapter). This file establishes what each of the three
-corpora is, what we are doing with them, and why we think the work is honest.
+This document is the grounding for the line-by-line mapping between (1) Pope Leo XIV's words in *Magnifica Humanitas*, (2) the CIRIS Accord, and (3) the framework implementation across the federation repos. The current mapping lives in the `CONTRIBUTION_OBJECTS_v1.4_*.md` files (wire-envelope-format output of round 3); the methodology that grew from this work and now spans four batches is described in `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`. This file establishes what each of the three corpora is, what we are doing with them, and why we think the work is honest.
 
 ---
 
@@ -502,20 +496,18 @@ mapping is honest before it is satisfying.
 ## 5. Deliverables
 
 - **`MISSION.md`** — this file. The grounding.
-- **`MAPPING_CH0_INTRO.md`** — Introduction §§1–9.
-- **`MAPPING_CH1_DOCTRINE.md`** — Chapter 1 (development of Social
-  Doctrine).
-- **`MAPPING_CH2_FOUNDATIONS.md`** — Chapter 2 (foundations and
-  principles; this is where most STRONG_ALIGN density should land).
-- **`MAPPING_CH3_TECH_AI.md`** — Chapter 3 (technocratic paradigm and
-  AI; the densest engagement with what CIRIS does).
-- **`MAPPING_CH4_TRUTH_WORK_FREEDOM.md`** — Chapter 4.
-- **`MAPPING_CH5_POWER_LOVE.md`** — Chapter 5.
-- **`MAPPING_CONCLUSION.md`** — Conclusion (Incarnation, one body,
-  *Magnificat*; expect high `DIVERGENT_GROUND` density honestly named).
-- **`GAPS.md`** — distilled at the end: load-bearing `GAP_ACCORD` and
-  `GAP_IMPL` rows, triaged. Candidate inputs to an Accord revision and
-  to federation-roadmap work.
+- **`METHODOLOGY.md`** — the 7-layer reading discipline + iterative-process discipline.
+- **`GOVERNANCE_FABRIC_MAPPING_STANDARD.md`** — the formal 5-phase mapping protocol that grew from MH and now spans four batches.
+- **`LANGUAGE_PRIMER.md`** — wire-format grammar (eight axes + four structural primitives); synced from CIRISRegistry v1.1.
+- **`CONTRIBUTION_OBJECTS_v1.4_*.md`** (8 files) — MH round 3 wire-envelope mapping output.
+- **`CONTRIBUTION_OBJECTS_EU_HLEG_*.md`** (5 files) — EU HLEG translation.
+- **`CONTRIBUTION_OBJECTS_IEEE_EAD_*.md`** (11 files) — IEEE EAD translation.
+- **`CONTRIBUTION_OBJECTS_ASEAN_*.md`** (5 files) — ASEAN Guide translation.
+- **`FOUR_BATCH_OVERLAP_ANALYSIS.md`** — Phase 3 cross-batch synthesis.
+- **`TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`** + per-batch `TRANSLATION_AUDIT_*.md` — Phase 4 calibration.
+- **`DIMENSIONS_GUIDE.md`** — quick reference to the 27 structural-evidence dimensions.
+- **`GAPS.md`** — distilled findings: load-bearing gaps triaged. Candidate inputs to Accord revision and federation-roadmap work.
+- **`ACCORD_UPDATE.md`** — proposed Accord revisions.
 
 ---
 

@@ -3,7 +3,7 @@
 **Version**: 0.3 (proposal, not adopted; v0.2 body preserved below with v0.3 trio addendum at §13)
 **Status**: Draft — for review. The Accord auto-expires 2027-04-16 with a public comment window; this is input to that process.
 **Date**: 2026-05-27
-**Methodology**: Informed by `MAPPING_CH*.md` v2 (under `METHODOLOGY.md` 7-layer discipline), `GAPS.md` v4 (with v1.4 trio-test addendum), `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`, `FOUR_BATCH_OVERLAP_ANALYSIS.md`, `TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`.
+**Methodology**: Informed by `CONTRIBUTION_OBJECTS_v1.4_*.md` (MH round-3 wire-envelope mapping under `METHODOLOGY.md` 7-layer discipline), `GAPS.md` v4 (with v1.4 trio-test addendum), `GOVERNANCE_FABRIC_MAPPING_STANDARD.md`, `FOUR_BATCH_OVERLAP_ANALYSIS.md`, `TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md`, `DIMENSIONS_GUIDE.md`.
 
 **What's new in v0.3**: §13 trio addendum reflecting (a) which v0.2 proposals are now wire-supported in CIRISRegistry FSD-002 v1.3/v1.4 vs. which remain Accord-side work; (b) the four-batch overlap analysis confirming the framework's principle scaffolding is content-neutral across four institutional shapes; (c) the one cross-source conflict surfaced (CIRISMedical #1) with the federation-level categorical posture preserved.
 
@@ -279,11 +279,15 @@ G-1 Compute/energy as decision input was a v2.0 gap that v2.1 closed. The forwar
 
 ## 12. Cross-references
 
-- `GAPS.md v3` — verified findings document this update responds to
-- `METHODOLOGY.md` — the v2 seven-layer discipline; confirmed-persistent gap list at §7
-- `MAPPING_CH*.md` — v2 chapter mappings under METHODOLOGY discipline
-- `PHILOSOPHICAL_EVAL_*.md` — per-repo MISSION evaluations (v1; refresh pending)
-- `ACCORD_canonical.txt` — v1.2-Beta the revisions amend
+- `GAPS.md` v4 — verified findings (v3 body + v1.4 trio addendum)
+- `METHODOLOGY.md` — 7-layer discipline + iterative-process lessons
+- `GOVERNANCE_FABRIC_MAPPING_STANDARD.md` — formal mapping protocol
+- `LANGUAGE_PRIMER.md` — wire-format grammar (v1.1 synced from Registry)
+- `CONTRIBUTION_OBJECTS_v1.4_*.md` (MH) + `_EU_HLEG_*.md` + `_IEEE_EAD_*.md` + `_ASEAN_*.md` — per-batch wire-envelope outputs
+- `FOUR_BATCH_OVERLAP_ANALYSIS.md` — cross-batch synthesis
+- `TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md` + `TRANSLATION_AUDIT_*.md` — translation-quality calibration
+- `DIMENSIONS_GUIDE.md` — quick reference to 27 structural-evidence dimensions
+- `ACCORD_canonical.txt` — v1.2-Beta the revisions amend (locally ignored)
 - `MISSION_CIRIS*.md` — federation-peer MDD charters affected
 
 **End ACCORD_UPDATE.md v0.2 body (proposal, not adopted)**

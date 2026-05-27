@@ -394,12 +394,16 @@ The prefix is **`detection:correlated_action:{axis}`** (CIRISRegistry FSD-002 v1
 - **Doctrinal anchor for the persistent gaps**: ACCORD_UPDATE.md v0.2 §2 Constitutive Continuity.
 
 **Cross-references**:
-- `MISSION.md` — methodology, status taxonomy, grounding posture
-- `METHODOLOGY.md` — the v2 seven-layer discipline, confirmed-persistent gap list, re-evaluation lessons
-- `MAPPING_CH*.md` — v2 chapter mappings (under METHODOLOGY.md discipline)
-- `PHILOSOPHICAL_EVAL_*.md` — per-repo MISSION evaluations (some v1-era; pending refresh)
-- `ACCORD_UPDATE.md` — proposed Accord revisions (v0.2 with v3 alignment; v0.3 trio addendum)
-- `ACCORD_canonical.txt` — v1.2-Beta
+- `MISSION.md` — grounding, posture
+- `METHODOLOGY.md` — 7-layer discipline, iterative-process lessons
+- `GOVERNANCE_FABRIC_MAPPING_STANDARD.md` — the formal mapping protocol
+- `LANGUAGE_PRIMER.md` — wire-format grammar
+- `CONTRIBUTION_OBJECTS_v1.4_*.md` (MH) / `_EU_HLEG_*.md` / `_IEEE_EAD_*.md` / `_ASEAN_*.md` — per-batch wire-envelope outputs
+- `FOUR_BATCH_OVERLAP_ANALYSIS.md` — cross-batch synthesis
+- `TRANSLATION_QUALITY_AUDIT_SYNTHESIS.md` + `TRANSLATION_AUDIT_*.md` — translation-quality calibration
+- `DIMENSIONS_GUIDE.md` — quick reference to 27 structural-evidence dimensions
+- `ACCORD_UPDATE.md` — proposed Accord revisions (v0.3)
+- `ACCORD_canonical.txt` — v1.2-Beta (source ACCORD; locally ignored)
 
 **End GAPS.md v3.0 body**
 
