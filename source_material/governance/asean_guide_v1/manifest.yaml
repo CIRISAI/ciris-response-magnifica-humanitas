@@ -1,0 +1,109 @@
+# ASEAN Guide on AI Governance and Ethics — Phase 1 manifest
+# Per GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation
+
+bootstrap_batch_id: asean_guide_v1
+
+document:
+  title: "ASEAN Guide on AI Governance and Ethics"
+  publisher: "Association of Southeast Asian Nations (ASEAN)"
+  custodian: "ASEAN Digital Ministers' Meeting (ADGMIN)"
+  endorsement_date: 2024-02-02
+  endorsement_forum: "Fourth ASEAN Digital Ministers Meeting (ADGMIN-4)"
+  pdf_creation_date: 2023-12-20
+  url: "https://asean.org/wp-content/uploads/2024/02/ASEAN-Guide-on-AI-Governance-and-Ethics_beautified_201223_v2.pdf"
+  authoritative_landing: "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/"
+  related_supplements:
+    - "Expanded ASEAN Guide on AI Governance and Ethics — Generative AI (January 2025) — separate document, not mapped in this batch"
+
+institutional_shape: "Multilateral political body (regional intergovernmental — 10 member states)"
+geographic_scope: "Southeast Asia: Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Vietnam"
+secular: true
+ai_specific: true
+
+source_files:
+  - filename: asean_guide_ai_governance_ethics_2024.pdf
+    sha256: 6464a6d912a918a1b49c36b7dbd7f66b4756352e49164c5020f28b0b190bfe4e
+    bytes: 4233765
+    pages: 87
+    extracted_on: 2026-05-27
+  - filename: asean_guide.txt
+    extraction_method: "pdftotext -layout"
+    lines: 3858
+
+structure:
+  - section: "Executive Summary"
+    pages: "3–5"
+  - section: "A. Introduction"
+    pages: "6–9"
+    sub_sections:
+      - "1. Objectives"
+      - "2. Assumptions"
+      - "3. Target Audience"
+      - "4. Definitions"
+  - section: "B. Guiding Principles for the Framework"
+    pages: "10–16"
+    sub_sections:
+      - "1. Transparency and Explainability"
+      - "2. Fairness and Equity"
+      - "3. Security and Safety"
+      - "4. Human-centricity"
+      - "5. Privacy and Data Governance"
+      - "6. Accountability and Integrity"
+      - "7. Robustness and Reliability"
+  - section: "C. AI Governance Framework"
+    pages: "17–45"
+    sub_sections:
+      - "1. Internal governance structures and measures"
+      - "2. Determining the level of human involvement in AI-augmented decision-making"
+      - "3. Operations management"
+      - "4. Stakeholder interaction and communication"
+  - section: "D. National-level Recommendations"
+    pages: "46–52"
+  - section: "E. Regional-level Recommendations"
+    pages: "53–57"
+  - section: "F. Conclusion"
+    page: "58"
+  - section: "Annex A — AI Risk Impact Assessment Template"
+    pages: "60–72"
+    note: "Operational checklist; high translation density expected"
+  - section: "Annex B — Use Cases"
+    pages: "73–86"
+    role: "Descriptive case studies; not normative — light mapping only or skipped"
+    sub_sections:
+      - "1. Aboitiz Group (74–75)"
+      - "2. EY (76–77)"
+      - "3. Gojek (78–79)"
+      - "4. UCARE.AI (80–82)"
+      - "5. Smart Nation Group, Singapore (83–84)"
+      - "6. Ministry of Education, Singapore (85–86)"
+
+unit_of_mapping: "Natural paragraph (blank-line-separated prose unit) within a structural sub-section; bullet items within enumerated lists treated as discrete units when they carry distinct normative content"
+estimated_atomic_units: "~200–300 substantive paragraphs (between EU HLEG and IEEE EAD in scale)"
+
+mapping_focus_priority:
+  - "B. Guiding Principles (the 7 principles — direct correspondence with CIRIS prefix families)"
+  - "C. AI Governance Framework (the operational core — internal governance, human-involvement levels, operations management, stakeholder interaction)"
+  - "Annex A Risk Impact Assessment Template (operational checklist with high translation density)"
+
+expected_verdict_distribution:
+  estimate: "Very high clean+composed rate (~85%+); minimal T-1 (secular regional document; no theological content); some T-2 (regional/multilateral framing language); minimal T-3 (the 7 principles + 4 components have strong existing prefix-family coverage)"
+  strategic_value:
+    - "First multilateral-political-body institutional shape — distinct from MH (religious magisterium), EU HLEG (governmental advisory), IEEE EAD (technical society)"
+    - "First Asia-anchored document in the bootstrap batch — diversity check"
+    - "Most recent document in the trio (Feb 2024) — minimal supersession analysis needed"
+    - "Direct test of GOVERNANCE_FABRIC_MAPPING_STANDARD §6 regional-composition framework once at least one other batch is also deployed"
+    - "Three-broad-categories of human involvement (HITL / HOTL / HOOTL) maps directly to CIRIS oversight ladder — verification opportunity"
+
+phase_status:
+  phase_1_source_preparation: complete (2026-05-27)
+  phase_2_sub_agent_fan_out: in_progress
+  phase_3_human_review_synthesis: pending
+  phase_4_wire_format_input_proposal: pending
+  phase_5_publication_as_bootstrap_batch: pending
+
+cross_references:
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation"
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §7.4 ASEAN Guide (the deployment slot this manifest fills)"
+  - "MISSION.md §1.3 (grounding posture)"
+  - "METHODOLOGY.md §0 + §8.5 (iterative process + primer-drift discipline)"
+  - "LANGUAGE_PRIMER.md v1.1 (the grammar Phase 2 sub-agents will use)"

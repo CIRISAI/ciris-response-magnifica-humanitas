@@ -1,0 +1,108 @@
+# IEEE Ethically Aligned Design First Edition — Phase 1 manifest
+# Per GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation
+
+bootstrap_batch_id: ieee_ead_v1
+
+document:
+  title: "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems"
+  short_title: "EAD1e"
+  edition: "First Edition"
+  publisher: "IEEE (Institute of Electrical and Electronics Engineers)"
+  custodian: "IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems"
+  publication_date: 2019-03-25
+  pdf_creation_date: 2019-03-18
+  authors: "~700+ contributors across 11 committees; multi-stakeholder global"
+  license: "Creative Commons Attribution-NonCommercial 4.0 United States License"
+  url: "https://standards.ieee.org/wp-content/uploads/import/documents/other/ead1e.pdf"
+  authoritative_landing: "https://sagroups.ieee.org/global-initiative/"
+  prior_versions:
+    - "EADv1 (December 2016) — Request for Input draft"
+    - "EADv2 (December 2017) — second Request for Input draft"
+
+institutional_shape: "Technical society / engineering professional body (with civil-society reach via Global Initiative)"
+geographic_scope: "Global (USA-anchored institution; explicitly multi-traditional content engaging Classical Western, Confucian, Buddhist, Ubuntu, and other ethical lineages)"
+secular: true
+ai_specific: true
+
+source_files:
+  - filename: ead1e.pdf
+    sha256: 5f11ceb1367b4a1850e7c916ccde451aa7aab5930c112aad01027927ca0ac6a5
+    bytes: 4679154
+    pages: 294
+    extracted_on: 2026-05-27
+  - filename: ead1e.txt
+    extraction_method: "pdftotext -layout"
+    lines: 16065
+  - filename: ead1e_flowed.txt
+    extraction_method: "pdftotext (flow mode)"
+    lines: 24391
+
+structure:
+  - section: "Introduction"
+    pages: "2"
+  - section: "Executive Summary"
+    pages: "3–6"
+  - section: "Acknowledgements"
+    pages: "7–8"
+    role: "non-normative; not mapped"
+  - section: "Ch 1 — From Principles to Practice"
+    pages: "9–16"
+  - section: "Ch 2 — General Principles"
+    pages: "17–35"
+    note: "The eight General Principles: Human Rights / Well-being / Data Agency / Effectiveness / Transparency / Accountability / Awareness of Misuse / Competence. CIRIS-anchoring dense."
+  - section: "Ch 3 — Classical Ethics in A/IS"
+    pages: "36–67"
+    note: "Engages Western virtue + deontological + utilitarian; Buddhist; Ubuntu; Shinto; Confucian. Direct counterpart to CIRIS `pdma_framing` polyglot principle anchoring."
+  - section: "Ch 4 — Well-being"
+    pages: "68–89"
+  - section: "Ch 5 — Affective Computing"
+    pages: "90–109"
+    note: "Likely T-3 surface — no current CIRIS prefix family for affective-state attestations."
+  - section: "Ch 6 — Personal Data and Individual Agency"
+    pages: "110–123"
+  - section: "Ch 7 — Methods to Guide Ethical Research and Design"
+    pages: "124–139"
+  - section: "Ch 8 — A/IS for Sustainable Development"
+    pages: "140–168"
+  - section: "Ch 9 — Embedding Values into Autonomous and Intelligent Systems"
+    pages: "169–197"
+  - section: "Ch 10 — Policy"
+    pages: "198–210"
+  - section: "Ch 11 — Law"
+    pages: "211–281"
+    note: "Longest chapter; legal-doctrine dense"
+  - section: "About / Process / References"
+    pages: "282–294"
+    role: "non-normative; not mapped"
+
+unit_of_mapping: "Natural paragraph (blank-line-separated prose unit) within a chapter sub-section; also discrete enumerated recommendations / candidate-recommendations where present"
+estimated_atomic_units: "~600–900 substantive paragraphs (substantially larger than MH or EU HLEG; reflects scope across 11 substantive chapters)"
+
+mapping_focus_priority:
+  - "Ch 2 General Principles (the operational core — each of the 8 General Principles maps to multiple CIRIS prefix families directly)"
+  - "Ch 3 Classical Ethics (cross-traditional alignment — direct counterpart to CIRIS pdma_framing polyglot anchoring)"
+  - "Ch 5 Affective Computing (T-3 likely surface — drives v1.5 wire-format proposals)"
+  - "Ch 6 Personal Data (privacy + agency primitives)"
+  - "Ch 11 Law (legal-doctrine grounding for accountability primitives; substantial volume)"
+
+expected_verdict_distribution:
+  estimate: "High clean+composed rate (~80%); some T-1 (philosophical-tradition appeals — Ubuntu, Buddhist, Confucian — recognized as native register rather than translated); moderate T-2 (vision-language framing); meaningful T-3 surface in Ch 5 Affective Computing (~5–10 candidates)"
+  strategic_value:
+    - "Cross-traditional alignment depth — IEEE EAD's polyglot ethical framing aligns directly with CIRIS pdma_framing.yml §III multi-tradition anchoring"
+    - "Stress-test of methodology at scale (largest document in the trio)"
+    - "Likely T-3 surface validating that the standard's Phase 4 wire-format-input proposal flow works in practice"
+    - "Engineering-professional institutional shape — distinct from religious magisterium (MH), governmental advisory (EU HLEG), and multilateral political (ASEAN)"
+
+phase_status:
+  phase_1_source_preparation: complete (2026-05-27)
+  phase_2_sub_agent_fan_out: in_progress
+  phase_3_human_review_synthesis: pending
+  phase_4_wire_format_input_proposal: pending
+  phase_5_publication_as_bootstrap_batch: pending
+
+cross_references:
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation"
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §7.3 IEEE EAD (the deployment slot this manifest fills)"
+  - "MISSION.md §1.3 (grounding posture)"
+  - "METHODOLOGY.md §0 + §8.5 (iterative process + primer-drift discipline)"
+  - "LANGUAGE_PRIMER.md v1.1 (the grammar Phase 2 sub-agents will use)"
