@@ -1,0 +1,100 @@
+# EU HLEG Ethics Guidelines for Trustworthy AI — Phase 1 manifest
+# Per GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation
+
+bootstrap_batch_id: eu_hleg_v1
+
+document:
+  title: "Ethics Guidelines for Trustworthy AI"
+  subtitle: "Final"
+  publisher: "High-Level Expert Group on AI (HLEG), convened by the European Commission"
+  publication_date: 2019-04-08
+  authors: "52 experts; multi-stakeholder (academia, civil society, industry); facilitated by EC staff"
+  prior_versions:
+    - "Draft (December 2018; 500+ public comments received)"
+  url: "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+  pdf_url: "https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=60419"
+
+institutional_shape: "Governmental advisory (European Commission-convened expert group)"
+geographic_scope: "European Union (28 member states at time of writing; now 27)"
+secular: true
+ai_specific: true
+
+source_files:
+  - filename: eu_hleg_ethics_guidelines_trustworthy_ai_2019.pdf
+    sha256: 4a89863a96551bb3b9ce786afb1b1d58e8062f5a7fa3ed6748922550dde35e25
+    bytes: 1632682
+    pages: 41
+    extracted_on: 2026-05-27
+  - filename: eu_hleg_ethics_guidelines_trustworthy_ai_2019.txt
+    extraction_method: "pdftotext -layout"
+    lines: 2145
+  - filename: eu_hleg_ethics_guidelines_trustworthy_ai_2019_flowed.txt
+    extraction_method: "pdftotext (flow mode, no layout preservation)"
+
+structure:
+  - section: "Foreword"
+    pages: "(none — preface only)"
+  - section: "Executive Summary"
+    pages: "2–3"
+    role: "summary of key guidance; not substantive prose source"
+  - section: "A. Introduction"
+    pages: "4–5"
+  - section: "B. A Framework for Trustworthy AI"
+    pages: "6–8"
+    note: "Articulates the three components (lawful + ethical + robust) — sets up subsequent chapters"
+  - section: "Chapter I — Foundations of Trustworthy AI"
+    pages: "9–13"
+    sub_sections:
+      - "Fundamental rights as moral and legal entitlements"
+      - "From fundamental rights to ethical principles"
+      - "Ethical principles in the context of AI systems (Respect for human autonomy; Prevention of harm; Fairness; Explicability)"
+      - "Tensions between principles"
+  - section: "Chapter II — Realising Trustworthy AI"
+    pages: "14–23"
+    sub_sections:
+      - "1. Requirements of Trustworthy AI (the 7 requirements):"
+      - "  - 1.1 Human agency and oversight"
+      - "  - 1.2 Technical robustness and safety"
+      - "  - 1.3 Privacy and data governance"
+      - "  - 1.4 Transparency"
+      - "  - 1.5 Diversity, non-discrimination and fairness"
+      - "  - 1.6 Societal and environmental wellbeing"
+      - "  - 1.7 Accountability"
+      - "2. Technical and non-technical methods to realise Trustworthy AI"
+  - section: "Chapter III — Assessing Trustworthy AI"
+    pages: "24–31"
+    description: "Assessment list (operationalisation checklist for the 7 requirements)"
+  - section: "C. Examples of opportunities and critical concerns raised by AI"
+    pages: "32–34"
+  - section: "D. Conclusion"
+    page: "35"
+  - section: "Glossary"
+    pages: "36–40"
+
+unit_of_mapping: "Natural paragraph (blank-line-separated prose unit) within a structural section"
+estimated_atomic_units: "~150–200 substantive paragraphs after excluding page numbers, footnotes, ToC, structural headers"
+
+mapping_focus_priority:
+  - "Chapter I (Foundations) — the 4 ethical principles are direct CIRIS-principle anchoring opportunities"
+  - "Chapter II §1 (the 7 requirements) — the operational core; each requirement maps to multiple CIRIS prefix families"
+  - "Chapter III (Assessment list) — already-operationalised checklist items; high translation density expected"
+
+expected_verdict_distribution:
+  estimate: "Very high clean+composed rate (~85%+); few T-1 (secular document — no Christological / sacramental content); some T-2 (rhetorical framing in Conclusion and Introduction); minimal T-3 (the 7 requirements have direct CIRIS prefix-family correspondence)"
+  strategic_value:
+    - "First multi-source alignment test against Magnifica Humanitas (different traditions, convergent attestations on shared dimensions)"
+    - "First non-religious-magisterium institutional shape — tests methodology content-neutrality"
+
+phase_status:
+  phase_1_source_preparation: complete (2026-05-27)
+  phase_2_sub_agent_fan_out: not yet authorized
+  phase_3_human_review_synthesis: pending
+  phase_4_wire_format_input_proposal: pending
+  phase_5_publication_as_bootstrap_batch: pending
+
+cross_references:
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §2 Phase 1 source preparation (the methodology this manifest follows)"
+  - "GOVERNANCE_FABRIC_MAPPING_STANDARD.md §7.2 EU HLEG (the deployment slot this manifest fills)"
+  - "MISSION.md §1.3 (grounding posture applies to any governance-document mapping)"
+  - "METHODOLOGY.md §0 + §8.5 (iterative process + primer-drift discipline)"
+  - "LANGUAGE_PRIMER.md v1.1 (the grammar Phase 2 sub-agents will use)"

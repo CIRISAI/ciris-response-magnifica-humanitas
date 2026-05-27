@@ -336,48 +336,101 @@ For any agent decision, the audit-trail back to source governance documents foll
 
 ---
 
-## 7. The first three deployments (the §10.4 sequence)
+## 7. Deployments — the strategic trio + the prototype
 
-Per FSD-002 §10.4 bootstrap-contributions pattern, the first three deployments establish the standard's content-neutral methodology:
+### 7.0 Strategic reasoning — why these particular documents
 
-### 7.1 Magnifica Humanitas (DONE — round 3 complete)
+The *Magnifica Humanitas* mapping was the **prototype that produced this standard**. The methodology was built from MH; its content-neutrality claim is verified by reproducing successfully on three documents that are *institutionally and structurally distinct from MH and from each other*. Together with MH (religious magisterium), the four-document set covers the four major institutional shapes of senior governance documents:
+
+| Institutional shape | Document | Geographic scope | Strategic value |
+|---|---|---|---|
+| Religious magisterium | *Magnifica Humanitas* (2026) | Catholic / international | Prototype — produced the methodology |
+| Governmental advisory | EU HLEG Ethics Guidelines for Trustworthy AI (2019) | European Union | First multi-source alignment test |
+| Technical society / civil society | IEEE Ethically Aligned Design 2nd ed. (2019) | Global (USA-anchored, multi-traditional) | Cross-traditional alignment + likely T-3 surface (Affective Computing) |
+| Multilateral political body | ASEAN Guide on AI Governance and Ethics (2024) | Southeast Asia (10 states) | Regional composition framework test |
+
+After the trio + MH, no honest critic can claim the framework was tested only against documents that look like religious encyclicals. **Institutional-shape diversity is the load-bearing structural feature of this batch.** Geographic diversity (three continents) is real but secondary; stakeholder-voice diversity (gov advisory + technical society + multilateral political + religious magisterium) is what makes the alignment claim non-circular.
+
+### 7.1 Magnifica Humanitas — the prototype (DONE; round 3 complete)
 
 - **Source**: Pope Leo XIV, *Magnifica Humanitas*, 15 May 2026
+- **Institutional shape**: religious magisterium
 - **Unit**: numbered paragraphs (245)
-- **Outputs**: this repository (`CONTRIBUTION_OBJECTS_v1.4_CH*.md`) + synthesis
 - **bootstrap_batch_id**: `magnifica_humanitas_v1`
-- **Driven v1.3 + v1.4 wire-format additions**: subsidiarity, universal destination of goods, supply-chain labor recognition, multilateral participation, ecology of communication, testimonial_witness, agent_files, holds_bytes, witness_relation, lexical-vulnerability-priority policy
-- **Status**: Reference implementation of the standard. ~73% clean+composed; ~22% T-1 (correctly bowed out); 1 T-3 candidate (already-tracked v1.5+).
+- **Drove v1.3 + v1.4 wire-format additions**: subsidiarity (`locality:decision:{scale}`), universal destination of goods (`detection:distributive:access:{resource_type}`), supply-chain labor recognition (`credits:*:substrate_building`), multilateral participation (`multilateral_participation:{forum}:{kind}`), ecology of communication (`detection:correlated_action:ecology_of_communication:{aspect}` axis), `testimonial_witness:{kind}`, `agent_files:*`, `holds_bytes:*`, `witness_relation` envelope field, §6.1.4 lexical-vulnerability-priority policy, §2.2.1 `delegates_to` authority-source reuse pattern
+- **Status**: ~73% clean+composed; ~22% T-1 (correctly bowed out); 1 residual T-3 candidate (already-tracked v1.5+ workshop). Three rounds of iteration recorded in commit history; methodology stabilized.
+- **Outputs**: `CONTRIBUTION_OBJECTS_v1.4_CH*.md` + `CONTRIBUTION_OBJECTS_v1.4_SYNTHESIS.md` in this repository.
 
-### 7.2 EU AI Act (NEXT)
+### 7.2 EU HLEG Ethics Guidelines for Trustworthy AI (NEXT — Phase 1 complete)
 
-- **Source**: Regulation (EU) 2024/1689 (the AI Act, as enacted)
-- **Unit**: articles + annex provisions (~120 articles + Annexes I–XIII)
-- **Expected verdict distribution**: very high clean+composed rate — the Act is mechanism-descriptive (legal drafting); risk-tiered structure (unacceptable / high / limited / minimal) maps directly to Stewardship Tier
-- **Expected new T-3 candidates**: probably none load-bearing — the EU AI Act's content has been thoroughly absorbed into the framework's prohibitions, attestation ladder, and decision-hierarchy primitives. Verification of this claim is the deployment's strategic value.
-- **bootstrap_batch_id**: `eu_ai_act_v1`
-- **First multi-source alignment opportunity**: cross-reference with Magnifica Humanitas on shared dimensions (weapons, manipulation, discrimination, surveillance).
+- **Source**: High-Level Expert Group on AI (HLEG), convened by the European Commission, "Ethics Guidelines for Trustworthy AI," 8 April 2019. 52-expert deliberatively-produced document.
+- **Institutional shape**: governmental advisory (European Commission-convened expert group)
+- **Geographic scope**: European Union
+- **Source material**: `source_material/governance/eu_hleg_v1/` (Phase 1 complete 2026-05-27; PDF + extracted text + manifest)
+- **Unit**: natural paragraphs within structural sections (~150–200 substantive atomic units across 41 pages); see `source_material/governance/eu_hleg_v1/manifest.yaml`
+- **bootstrap_batch_id**: `eu_hleg_v1`
+- **Expected verdict distribution**: very high clean+composed rate (~85%+); few T-1 (secular; no Christological / sacramental content); some T-2 (rhetorical framing); minimal T-3 (the 7 requirements map onto existing prefix families with direct correspondence)
+- **Strategic value**:
+  - First multi-source alignment test against *Magnifica Humanitas*: different traditions, convergent attestations on shared dimensions (transparency, accountability, non-discrimination, privacy, safety)
+  - First non-religious-magisterium institutional shape — tests methodology content-neutrality
+  - The 7 requirements (Human agency + oversight; Technical robustness + safety; Privacy + data governance; Transparency; Diversity + non-discrimination + fairness; Societal + environmental wellbeing; Accountability) provide a structured rubric for cross-source comparison
+- **Mapping focus priorities**: Chapter I 4 principles; Chapter II §1 the 7 requirements; Chapter III assessment list
 
-### 7.3 NIST AI RMF (THEN)
+### 7.3 IEEE Ethically Aligned Design 2nd ed. (THEN)
 
-- **Source**: NIST AI Risk Management Framework 1.0 (Govern / Map / Measure / Manage)
-- **Unit**: functions + categories + subcategories (~50 subcategories)
-- **bootstrap_batch_id**: `nist_airmf_v1`
-- **Strategic value**: US-side regulatory partner to the EU AI Act; demonstrates the standard works for functional / process-organized frameworks as well as article-organized ones.
+- **Source**: IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems, "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems," 2nd edition, March 2019. ~700+ contributors.
+- **Institutional shape**: technical society / civil society (engineering professional body)
+- **Geographic scope**: global (USA-anchored; multi-traditional in its own framing — explicitly engages classical Western ethics + Confucian + Buddhist + Ubuntu)
+- **Unit**: natural paragraphs within chapter sections (~290 pages; 10 chapters; estimated 500–800 atomic units — substantially larger than MH or EU HLEG)
+- **Sub-agent fan-out**: ~10 sub-agents (one per chapter), not 7, given the scope
+- **bootstrap_batch_id**: `ieee_ead_v2`
+- **Expected verdict distribution**: high clean+composed rate; the document's multi-traditional framing aligns directly with CIRIS's polyglot principle anchoring in `pdma_framing.yml §III`; expect dense composed envelopes
+- **Watch for T-3 in the Affective Computing chapter**: no current CIRIS prefix family for affective-state attestations. May surface a load-bearing T-3 proposing an `affective:*` family for v1.5 consideration.
+- **Strategic value**:
+  - Cross-traditional alignment depth — IEEE EAD's classical-ethics chapter directly engages traditions the CIRIS framework's `pdma_framing` already names, providing very strong multi-source-overlap evidence
+  - Stress-test of the methodology at scale (largest document in the trio)
+  - Likely T-3 surface validating that the standard's Phase 4 wire-format-input proposal flow works in practice
 
-After three independent deployments, the multi-source overlap analysis becomes the strongest evidence the framework has produced for its alignment claim. Three senior frameworks from three distinct traditions (Catholic moral, EU regulatory, US regulatory) all making convergent attestations on shared dimensions is the load-bearing structural-evidence outcome.
+### 7.4 ASEAN Guide on AI Governance and Ethics (LAST in the trio)
 
-### 7.4 Subsequent deployments (priority-ordered candidates)
+- **Source**: ASEAN Digital Ministers' Meeting, "ASEAN Guide on AI Governance and Ethics," February 2024.
+- **Institutional shape**: multilateral political body (regional intergovernmental)
+- **Geographic scope**: Southeast Asia (Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Vietnam)
+- **Unit**: TBD at Phase 1; likely substantive sections covering governance principles, risk management, deployer + user responsibilities, internal governance structures, accountability mechanisms
+- **bootstrap_batch_id**: `asean_guide_v1`
+- **Expected verdict distribution**: high clean+composed rate; the document is operationally-framed (deployer + user responsibilities)
+- **Strategic value**:
+  - Direct test of `GOVERNANCE_FABRIC_MAPPING_STANDARD §6` regional-composition framework
+  - Most recent document; least supersession analysis needed
+  - The multilateral-political-body shape benefits from two prior secular deployments to compare against (EU advisory + IEEE technical society + ASEAN multilateral = three distinct institutional shapes mapped before this lands)
+- **Precondition for ASEAN deployment**: at least EU HLEG must be deployed first so the regional-composition framework can be exercised on a realistic two-batch + jurisdictional-tagging subgraph
 
-- Council of Europe AI Convention CETS 225 (international law)
-- Hiroshima AI Process (international soft law)
-- CARE Principles for Indigenous Data Governance (indigenous data sovereignty)
-- Ubuntu philosophy of personhood (formalization of the framework's primary anchoring tradition)
-- Buddhist economics (Schumacher / Sivaraksa lineage)
-- Confucian AI ethics
-- UNESCO Recommendation on AI Ethics
+### 7.5 Multi-source overlap analysis (triggered after the trio lands)
 
-Each adds independent confirmation; each may surface a small number of T-3 candidates that drive subsequent wire-format additions; the methodology is the same.
+Once all four batches (MH + EU HLEG + IEEE EAD + ASEAN) are published, the federation has its first **structurally-evidenced alignment claim**: convergent attestations on shared dimensions from four institutionally-distinct senior frameworks across four geographic regions and four traditions.
+
+Expected analytical outputs:
+- Per-prefix alignment density (which dimensions are attested by 4 / 3 / 2 / 1 of the four batches)
+- Conflict surfacing (direct conflicts; mutability conflicts; scope-mismatch conflicts)
+- Coverage gaps (dimensions attested by some but not others — potential harmonization opportunities)
+- The first non-trivial regional-composition exercise for an agent deployed in a jurisdiction where multiple batches apply
+
+### 7.6 Subsequent deployments (priority-ordered candidates, post-trio)
+
+Once the methodology + four-document overlap analysis is demonstrated:
+
+- **Council of Europe AI Convention CETS 225** (2024) — international law / treaty-based; 46+ member states; complements the trio with binding-treaty institutional shape
+- **UN UNESCO Recommendation on AI Ethics** (2021) — global multilateral
+- **Hiroshima AI Process** — G7 international soft law
+- **CARE Principles for Indigenous Data Governance** — indigenous data sovereignty
+- **Ubuntu philosophy of personhood** (formal text-based mapping) — formalizes the framework's primary anchoring tradition
+- **Buddhist economics** (Schumacher / Sivaraksa lineage) — Asian contemplative-tradition
+- **Confucian AI ethics** (where formal documents exist) — East Asian philosophical
+- **EU AI Act** (Regulation EU 2024/1689) — most operational regulatory framework; tests whether the standard handles binding-law content
+- **NIST AI RMF** — US regulatory functional-organization
+- **Secular humanist consensus documents** — analytical-tradition completion
+
+Each adds independent confirmation; each may surface T-3 candidates that drive subsequent wire-format additions; the methodology is the same.
 
 ---
 

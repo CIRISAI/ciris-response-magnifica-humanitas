@@ -22,4 +22,11 @@ venv/
 
 # Node
 node_modules/
-source_material/
+
+# Source material: third-party document contents are gitignored (not republished).
+# CIRIS-authored manifests describing each batch IS tracked,
+# because manifests are our own deployment artifacts (not the source).
+source_material/**/*
+!source_material/
+!source_material/**/
+!source_material/**/manifest.yaml
