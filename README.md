@@ -131,6 +131,7 @@ Recommended reading order:
 11. **[GAPS.md](GAPS.md)** — Consolidated findings (gap-by-gap status; v4 trio addendum at §11)
 12. **[ACCORD_UPDATE.md](ACCORD_UPDATE.md)** — Proposed revisions to the CIRIS Accord; v0.3 trio addendum at §13; Annex K cross-walk at §14
 13. **[PRIOR_ART.md](PRIOR_ART.md)** — Where this work sits in the AI-ethics-and-governance literature; honest attribution of overlap with Jobin et al. (2019), Floridi & Cowls (2019), Rome Call (2020), Policy Cards (2025), OSCAL-for-AI (2026), and NIST AI RMF crosswalks; what we should and should not claim
+14. **[WEBSITE_INTEGRATION.md](WEBSITE_INTEGRATION.md)** — Brief for the website team building the cohesive graph browser: entity types, relationships, source files, stable IDs, navigation patterns, calibration callouts to surface, what NOT to display
 
 Source materials live under `source_material/governance/{batch_id}/` with per-batch `manifest.yaml`. The third-party document content itself is gitignored (not republished); the manifests are tracked.
 
