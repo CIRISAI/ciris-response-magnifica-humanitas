@@ -1,0 +1,848 @@
+---
+title: Governance Mapping
+description: Mapping of CIRIS controls to senior governance frameworks and vice versa.
+---
+
+# Governance Framework Mapping
+
+This page maps CIRIS controls (dimensions) to senior governance frameworks (batches) and vice versa, using our epistemic language (`wire_form`, primitives, and modalities).
+
+## Controls to Frameworks
+
+### D01 — `non_maleficence:*` (STRONG-4)
+*Soft-harm-avoidance baseline (the soft-scalar above the prohibited:* floor)*
+
+**Wire Primitives**: `non_maleficence:* (soft scalar)`, `prohibited:* (constitutional floor)`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §107
+  - *Language*: "deception as dignity-violation"
+  - *Wire Form (Epistemic Language)*: `non_maleficence:epistemic_environment_degradation + prohibited:deception_fraud`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.2 Technical robustness
+  - *Language*: "AI systems must prevent harm, ensure reliable behaviour, respect physical/mental integrity"
+  - *Wire Form (Epistemic Language)*: `non_maleficence:no_cause_or_exacerbate_harm`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4 §0.a
+  - *Language*: "human well-being requires AI development that does not cause unintended harm"
+  - *Wire Form (Epistemic Language)*: `non_maleficence:wellbeing_dimensions_harm_class`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.3 Security/Safety
+  - *Language*: "AI should be safe and secure, and not cause harm to users; resilient to attack and failure"
+  - *Wire Form (Epistemic Language)*: `non_maleficence:safe_and_secure_baseline`
+
+### D02 — `integrity:*` (STRONG-4)
+*'System holds together' structural anchor — auditable, reproducible, lifecycle integrity*
+
+**Wire Primitives**: `integrity:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §40
+  - *Language*: "doctrinal continuity is the integrity of the Magisterium"
+  - *Wire Form (Epistemic Language)*: `integrity:doctrinal_continuity`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.4 Transparency
+  - *Language*: "transparency requirement is linked with the explicability principle — data, system, and business models"
+  - *Wire Form (Epistemic Language)*: `integrity:explicability_for_trust`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch11 §I6
+  - *Language*: "state accountability under public scrutiny is a constitutional integrity property of A/IS regulation"
+  - *Wire Form (Epistemic Language)*: `integrity:state_accountability_public_scrutiny`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.6 Accountability/Integrity
+  - *Language*: "AI should be designed and deployed with integrity throughout the lifecycle; auditable; reproducible"
+  - *Wire Form (Epistemic Language)*: `integrity:lifecycle_integrity_attestation`
+
+### D03 — `justice:*` (STRONG-4)
+*Vulnerability-priority + fairness; tie-breaking modifier `justice:lexical_vulnerability_priority` (v1.3 CST closure) is four-source-corroborated*
+
+**Wire Primitives**: `justice:*`, `justice:lexical_vulnerability_priority`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §76
+  - *Language*: "justice demands lexical priority for the most vulnerable"
+  - *Wire Form (Epistemic Language)*: `justice:lexical_vulnerability_priority`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.7.d
+  - *Language*: "the trustworthy AI ecosystem must give voice to vulnerable populations and ensure equal access"
+  - *Wire Form (Epistemic Language)*: `justice:lexical_vulnerability_priority`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch10 §I1 (14 attestations)
+  - *Language*: "rights-based policy foundation requires lexical priority for vulnerable populations"
+  - *Wire Form (Epistemic Language)*: `justice:rights_based_policy_foundation + justice:lexical_vulnerability_priority`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.2 Fairness/Equity
+  - *Language*: "fairness and equity require attention to vulnerable populations and equal treatment"
+  - *Wire Form (Epistemic Language)*: `justice:fairness_outcome_testing`
+
+### D04 — `prohibited:*` (STRONG-4)
+*Categorical floor — polarity-(-1)/constitutional/species — the absolute moral form the wire format admits*
+
+**Wire Primitives**: `prohibited:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§197-198
+  - *Language*: "Not permissible to entrust lethal or irreversible decisions to artificial systems"
+  - *Wire Form (Epistemic Language)*: `prohibited:weapons_harmful:lethal_autonomous`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §C.2 (Unit 010); cites EP Resolution 2018/2752(RSP)
+  - *Language*: "the Parliament's resolution of 12 September 2018 and all related efforts on LAWS"
+  - *Wire Form (Epistemic Language)*: `prohibited:weapons_harmful`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4, Ch5
+  - *Language*: "lethal autonomous weapons are prohibited; categorical prohibition under DECEPTION_FRAUD"
+  - *Wire Form (Epistemic Language)*: `prohibited:weapons_harmful:lethal_autonomous`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.3 + Annex A
+  - *Language*: "AI shall not be deployed for autonomous lethal decision-making; deceptive defaults prohibited"
+  - *Wire Form (Epistemic Language)*: `prohibited:disinformation_at_scale + prohibited:deceptive_default_options + prohibited:autonomous_deception + prohibited:manipulation_coercion`
+
+### D05 — `detection:*` (STRONG-4)
+*LensCore F-3 / RATCHET family — aggregate-correlation / structural-injustice / drift detection*
+
+**Wire Primitives**: `detection:correlated_action:&#123;axis&#125;`, `detection:temporal_drift`, `detection:intra_agent_consistency`, `detection:distributive:access:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §36
+  - *Language*: "structures of sin / aggregate expendability of persons"
+  - *Wire Form (Epistemic Language)*: `detection:correlated_action:aggregate_footprint:expendability_of_persons`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.6 Societal/environmental well-being
+  - *Language*: "aggregate energy/carbon footprint of AI deployment"
+  - *Wire Form (Epistemic Language)*: `detection:correlated_action:aggregate_footprint:energy_carbon`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4, Ch5, Ch8
+  - *Language*: "cultural norm drift; aggregate environmental footprint; participation exclusion"
+  - *Wire Form (Epistemic Language)*: `detection:correlated_action:participation_exclusion:underrepresented_population + detection:correlated_action:aggregate_footprint:planetary_impact`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.2 + §C.3
+  - *Language*: "underrepresented populations; temporal drift; intra-agent consistency"
+  - *Wire Form (Epistemic Language)*: `detection:correlated_action:participation_exclusion:underrepresented_population + detection:temporal_drift + detection:intra_agent_consistency`
+
+### D06 — `goal:*` (STRONG-4)
+*Multi-scale belonging composite — self/family/community/affiliations/species/planet*
+
+**Wire Primitives**: `goal:&#123;scale&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§148-156
+  - *Language*: "labor as integral to belonging at family/community/affiliations/species scales"
+  - *Wire Form (Epistemic Language)*: `goal:family + goal:community + goal:affiliations + goal:species`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §A
+  - *Language*: "Trustworthy AI for Europe"
+  - *Wire Form (Epistemic Language)*: `goal:affiliations (EU-jurisdiction scope)`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4 §0.a
+  - *Language*: "well-being of all humans as the species-scale aim of A/IS"
+  - *Wire Form (Epistemic Language)*: `goal:species`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §A (6 ASEAN attestations of goal:affiliations)
+  - *Language*: "regional ecosystem belonging; cross-jurisdictional cooperation"
+  - *Wire Form (Epistemic Language)*: `goal:affiliations (ASEAN-jurisdiction)`
+
+### D07 — `locality:decision:&#123;scale&#125;` (STRONG-4)
+*v1.3 subsidiarity closure — decision routing at lowest competent scale*
+
+**Wire Primitives**: `locality:decision:&#123;local,community,national,regional,federation,planet&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§68-72
+  - *Language*: "decisions should be made at the lowest competent level"
+  - *Wire Form (Epistemic Language)*: `locality:decision:local + locality:decision:community`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.0
+  - *Language*: "EU-level decisions vs national-level decisions; supranational coordination"
+  - *Wire Form (Epistemic Language)*: `locality:decision:national + locality:decision:community`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch10
+  - *Language*: "national A/IS policy; international R&D collaboration"
+  - *Wire Form (Epistemic Language)*: `locality:decision:national + locality:decision:federation`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.4 + §E
+  - *Language*: "regional ASEAN-level coordination; community-level deployment decisions"
+  - *Wire Form (Epistemic Language)*: `locality:decision:regional (3) + locality:decision:community (2) + locality:decision:national (3)`
+
+### D08 — `autonomy:*` (STRONG-4)
+*Human-centric design + informational self-determination*
+
+**Wire Primitives**: `autonomy:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §107
+  - *Language*: "autonomy of the human as imago Dei; informed agency protection"
+  - *Wire Form (Epistemic Language)*: `autonomy:agent_self_determination`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.1 + §2.2 (Unit 019); 15 EU attestations total
+  - *Language*: "respect for human autonomy — the first principle; AI shall not unjustifiably subordinate, coerce, deceive, manipulate"
+  - *Wire Form (Epistemic Language)*: `autonomy:human_centric_design`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch3 + Ch4
+  - *Language*: "user autonomy; data agency; informed consent"
+  - *Wire Form (Epistemic Language)*: `autonomy:informed_agency_protection`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.4 Human-centricity
+  - *Language*: "AI shall not erode human autonomy; informational self-determination"
+  - *Wire Form (Epistemic Language)*: `autonomy:informational_self_determination`
+
+### D09 — `fidelity:*` (STRONG-4)
+*Faithful disclosure / faithful representation across lifecycle*
+
+**Wire Primitives**: `fidelity:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §17
+  - *Language*: "fidelity to the Gospel through doctrinal development"
+  - *Wire Form (Epistemic Language)*: `fidelity:epistemic_grounding`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.7 Accountability
+  - *Language*: "lifecycle responsibility; fidelity to declared purpose"
+  - *Wire Form (Epistemic Language)*: `fidelity:lifecycle_application`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch11
+  - *Language*: "duty-bearer obligation to fulfill rights as fidelity"
+  - *Wire Form (Epistemic Language)*: `fidelity:duty_bearer_obligation_to_fulfill_rights`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.4 + §B.1 (26 attestations, densest)
+  - *Language*: "algorithmic disclosure; human oversight as faithful representation"
+  - *Wire Form (Epistemic Language)*: `fidelity:algorithmic_disclosure + fidelity:explainability + fidelity:human_oversight_governance`
+
+### D10 — `beneficence:*` (STRONG-4)
+*Positive duty toward dignity / well-being / environmental stewardship*
+
+**Wire Primitives**: `beneficence:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§110-111
+  - *Language*: "technology as creation-participation; beneficence at species scale"
+  - *Wire Form (Epistemic Language)*: `beneficence:technology_as_creation_participation`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: Unit 005
+  - *Language*: "respect for human dignity is foundational; positive duty toward dignity"
+  - *Wire Form (Epistemic Language)*: `beneficence:respect_for_human_dignity`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4 §0
+  - *Language*: "well-being is the central beneficence aim of A/IS"
+  - *Wire Form (Epistemic Language)*: `beneficence:wellbeing_holistic_orientation`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.3
+  - *Language*: "environmental stewardship as positive beneficence"
+  - *Wire Form (Epistemic Language)*: `beneficence:environmental_stewardship`
+
+### D11 — `multilateral_participation:&#123;forum&#125;:&#123;kind&#125;` (STRONG-4)
+*v1.3 closure for federation participation in external multilateral processes*
+
+**Wire Primitives**: `multilateral_participation:&#123;forum&#125;:&#123;kind&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§200-203 + 224-227 (8 MH attestations)
+  - *Language*: "UN-system reform advocacy; cyber-norms diplomacy"
+  - *Wire Form (Epistemic Language)*: `multilateral_participation:un_system:reform_advocacy + multilateral_participation:cyber_norms:shared_regulations`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §A + §C
+  - *Language*: "European Parliament resolution support; UN human rights treaties"
+  - *Wire Form (Epistemic Language)*: `multilateral_participation:european_parliament:resolution_support + multilateral_participation:un_human_rights_treaties:legal_binding`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch10
+  - *Language*: "international R&D collaboration; cross-border policy exchange"
+  - *Wire Form (Epistemic Language)*: `multilateral_participation:international_rd_collaboration:standards_setting + multilateral_participation:cross_border_policy_exchange:knowledge_sharing`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §E (11 distinct :asean:&#123;kind&#125; envelopes — densest single-forum exercise in federation mapping history)
+  - *Language*: "ASEAN-internal coordination + working-group membership + framework drafting + governance evolution"
+  - *Wire Form (Epistemic Language)*: `multilateral_participation:asean:&#123;11 distinct kinds&#125;`
+
+### D12 — `conscience:*` (STRONG-4)
+*Agent-side faculty layer — optimization veto, epistemic humility, coherence, alētheia*
+
+**Wire Primitives**: `conscience:optimization_veto`, `conscience:epistemic_humility`, `conscience:coherence`, `conscience:entropy`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§111, 131-181
+  - *Language*: "conscience as the alētheia faculty; optimization-veto for ratification-decline scenarios"
+  - *Wire Form (Epistemic Language)*: `conscience:optimization_veto (3) + conscience:coherence (3) + conscience:epistemic_humility (2)`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.1 + §III.7
+  - *Language*: "stop-button at any time; whistleblower protection"
+  - *Wire Form (Epistemic Language)*: `conscience:optimization_veto`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch3 §§3.1.15-3.1.16 (6 IEEE attestations, densest)
+  - *Language*: "epistemic humility under uncertainty; phronesis in design"
+  - *Wire Form (Epistemic Language)*: `conscience:epistemic_humility`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.2 (HOTL category)
+  - *Language*: "stop-button / override surface for human-over-the-loop oversight"
+  - *Wire Form (Epistemic Language)*: `conscience:optimization_veto`
+
+### D13 — `testimonial_witness:&#123;kind&#125;` (STRONG-4)
+*v1.4 affected-party-voice closure — preserves displaced/affected/marginalized voices in attestation*
+
+**Wire Primitives**: `testimonial_witness:&#123;kind&#125;`, `witness_relation`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§81, 89, 138, 151, 166, 167, 173, 216, 217 (11 attestations)
+  - *Language*: "displaced_worker, abuse_survivor, war_victim, displaced_person, displaced_migrant, historical_moral_transformation"
+  - *Wire Form (Epistemic Language)*: `testimonial_witness:displaced_worker + :abuse_survivor + :war_victim + :displaced_person + :displaced_migrant + :historical_moral_transformation`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.5.c + §III.5.d
+  - *Language*: "give voice to affected and impacted workers in design-team diversity assessment"
+  - *Wire Form (Epistemic Language)*: `testimonial_witness:affected_worker + testimonial_witness:impacted_worker`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch6 + Ch7
+  - *Language*: "surveilled-person refusal; on-the-ground practitioner narrative"
+  - *Wire Form (Epistemic Language)*: `testimonial_witness:surveilled_person_refusal + testimonial_witness:on_the_ground_practitioner`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.4
+  - *Language*: "workforce displacement narrative preservation"
+  - *Wire Form (Epistemic Language)*: `testimonial_witness:displaced_worker`
+
+### D14 — `witness_diversity:*` (STRONG-4)
+*Stakeholder pluralism in design/testing/consultation*
+
+**Wire Primitives**: `witness_diversity:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "signs-of-times-contribution + catholicity"
+  - *Wire Form (Epistemic Language)*: `witness_diversity:signs_of_times + witness_diversity:catholicity`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "stakeholder consultation + testing red teams + stakeholder panels"
+  - *Wire Form (Epistemic Language)*: `witness_diversity:stakeholder_consultation + witness_diversity:red_team + witness_diversity:stakeholder_panel`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch7, Ch9 (16 distinct values)
+  - *Language*: "ubuntu_five_moral_domains, intercultural_RI_dialogue, end_user_target_community_consultation, affected_population_metric_selection, ..."
+  - *Wire Form (Epistemic Language)*: `witness_diversity:&#123;16 distinct values&#125;`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.4
+  - *Language*: "user testing varied backgrounds; stakeholder impact assessment"
+  - *Wire Form (Epistemic Language)*: `witness_diversity:user_testing_varied_backgrounds + witness_diversity:stakeholder_impact_assessment`
+
+### D15 — `moderation:*` (STRONG-4)
+*Federation self-correction layer (with IEEE shifting some load to partner_role:* ethics-board constructions)*
+
+**Wire Primitives**: `moderation:*`, `reconsideration:* (adjacent)`, `partner_role:* (IEEE-style ethics boards)`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§220-223
+  - *Language*: "dialogue-as-negotiation primitive engages moderation:* adjacency"
+  - *Wire Form (Epistemic Language)*: `moderation:* + adjacent reconsideration:*`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "whistleblower protection + out-of-distribution attestation"
+  - *Wire Form (Epistemic Language)*: `moderation:whistleblower_protection + moderation:ood_attestation`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4 + Ch11
+  - *Language*: "rollback on wellbeing reduction (reconsideration:* adjacent); ethics-board / certification-body partner_role constructions"
+  - *Wire Form (Epistemic Language)*: `reconsideration:rollback_on_wellbeing_reduction + partner_role:ethics_board`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: Annex A
+  - *Language*: "out-of-distribution attestation"
+  - *Wire Form (Epistemic Language)*: `moderation:ood_attestation`
+
+### D16 — `method:*` (STRONG-4)
+*Operational-design discipline (densest family overall; convergence weaker than principles — admits source-genre asymmetry honestly)*
+
+**Wire Primitives**: `method:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various (sparse — encyclical genre)
+  - *Language*: "approach:species:MH-education + approach:species:MH-construction"
+  - *Wire Form (Epistemic Language)*: `method:approach:species:* (2)`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §2
+  - *Language*: "trustworthy_ai_lawful_ethical_robust triad, algorithmic_impact_assessment, explainable_ai_research, fallback:rule_based_or_human_intervention"
+  - *Wire Form (Epistemic Language)*: `method:trustworthy_ai_lawful_ethical_robust:* + method:algorithmic_impact_assessment + method:explainable_ai_research + method:fallback:rule_based_or_human_intervention`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: all 11 chapters; densest single-family use across all batches
+  - *Language*: "engineering-society genre demands operational-method-recommendation density"
+  - *Wire Form (Epistemic Language)*: `method:* (136 distinct attestations)`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §C.3
+  - *Language*: "pre_deployment_robustness_testing, privacy_enhancing_technologies, model_provenance_tools, fairness_tools, explainability_tools, citizen_feedback_channel, community_codevelopment"
+  - *Wire Form (Epistemic Language)*: `method:* (36 attestations)`
+
+### D17 — `transparency_log:*` (STRONG-3)
+*CIRISVerify per-stakeholder disclosure log*
+
+**Wire Primitives**: `transparency_log:*`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "honest signs of authority and intent"
+  - *Wire Form (Epistemic Language)*: `transparency_log:* (sparse)`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.4 + §III.4
+  - *Language*: "transparency about purpose, capability, and limitations"
+  - *Wire Form (Epistemic Language)*: `transparency_log:per_stakeholder_disclosure`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch2 P5 + Ch6 + Ch11
+  - *Language*: "traceability + verifiability + intelligibility four-dimensional transparency"
+  - *Wire Form (Epistemic Language)*: `transparency_log:* (23 attestations)`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.1 + §C.4
+  - *Language*: "transparency and explainability through documentation and disclosure"
+  - *Wire Form (Epistemic Language)*: `transparency_log:* (10 attestations)`
+
+### D18 — `attestation:l&#123;3,5&#125;:*` (STRONG-3)
+*Verification ladder (L1-L5 hardware-rooted attestation)*
+
+**Wire Primitives**: `attestation:l1 through l5`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "structural verification of doctrinal claims"
+  - *Wire Form (Epistemic Language)*: `attestation:l3:doctrinal_continuity`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "auditability requires attestation at multiple verification levels"
+  - *Wire Form (Epistemic Language)*: `attestation:l3:* + attestation:l5:*`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch2 P5 + Ch9
+  - *Language*: "system-level verifiable attestations"
+  - *Wire Form (Epistemic Language)*: `attestation:l3:* + attestation:l5:*`
+
+### D19 — `partner_role:*` (STRONG-3)
+*CIRIS Registry partner-role taxonomy (ethics boards, audit bodies, stewards)*
+
+**Wire Primitives**: `partner_role:&#123;role&#125;`
+
+**Attesting Frameworks**:
+
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "audit/compliance partners"
+  - *Wire Form (Epistemic Language)*: `partner_role:audit_body`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch7 + Ch9 + Ch10 + Ch11 (19 attestations)
+  - *Language*: "Chief Values Officer, ethics committees, certification bodies, ISO-like body, accreditation bodies, HRIA/AIA stewards, trusted disclosure stewards"
+  - *Wire Form (Epistemic Language)*: `partner_role:&#123;19 distinct roles&#125;`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §E.001
+  - *Language*: "ASEAN Working Group on AI Governance (regional intergovernmental dual-remit)"
+  - *Wire Form (Epistemic Language)*: `partner_role:regional_intergovernmental_working_group`
+
+### D20 — `approach:*` (STRONG-3)
+*Decision-hierarchy strategic axis (Goal→Approach→Method→Progress-Measure DAG)*
+
+**Wire Primitives**: `approach:&#123;strategy_label&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "approach:species:* strategic-pursuit framing"
+  - *Wire Form (Epistemic Language)*: `approach:species:education + approach:species:construction (5 attestations)`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §B
+  - *Language*: "three-component framework approach (lawful + ethical + robust)"
+  - *Wire Form (Epistemic Language)*: `approach:trustworthy_ai_lawful_ethical_robust`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch1 + Ch2
+  - *Language*: "principles-to-practice pipeline; per-principle implementation strategies"
+  - *Wire Form (Epistemic Language)*: `approach:* (23 attestations)`
+
+### D21 — `progress_measure:*` (STRONG-3)
+*Declared-metric outcomes for tracking progress toward goals*
+
+**Wire Primitives**: `progress_measure:&#123;metric&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "structural-coherence progress markers"
+  - *Wire Form (Epistemic Language)*: `progress_measure:*`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "measurable progress toward trustworthiness"
+  - *Wire Form (Epistemic Language)*: `progress_measure:*`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch7 (8 attestations)
+  - *Language*: "documentation criteria as progress_measure; well-being indicators"
+  - *Wire Form (Epistemic Language)*: `progress_measure:* (8 distinct)`
+
+### D22 — `expertise:*` (STRONG-3)
+*Declared competence in domain (named-expert attestation)*
+
+**Wire Primitives**: `expertise:&#123;domain&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "discernment expertise (sensus fidelium adjacent)"
+  - *Wire Form (Epistemic Language)*: `expertise:*`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "domain expertise required for trustworthy deployment"
+  - *Wire Form (Epistemic Language)*: `expertise:domain`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch7-Ch11 (10 attestations)
+  - *Language*: "engineering, ethics, law, policy expertise; interdisciplinary expertise composition"
+  - *Wire Form (Epistemic Language)*: `expertise:&#123;domain&#125;`
+
+### D23 — `accountability:*` (STRONG-3)
+*Named accountability as primary axis (not just structural composition)*
+
+**Wire Primitives**: `accountability:&#123;axis&#125;`, `accountability:human_in_control (ASEAN-distinctive — HITL/HOTL/HOOTL)`
+
+**Attesting Frameworks**:
+
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.7 Accountability
+  - *Language*: "lifecycle accountability with redress mechanisms"
+  - *Wire Form (Epistemic Language)*: `accountability:lifecycle_responsibility`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch2 P6 + Ch11
+  - *Language*: "accountability principle; rights-based legal accountability"
+  - *Wire Form (Epistemic Language)*: `accountability:*`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.6 + §C.2 (19 attestations)
+  - *Language*: "accountability and integrity; human-in-control over AI-augmented decisions"
+  - *Wire Form (Epistemic Language)*: `accountability:human_in_control + accountability:lifecycle`
+
+### D24 — `reconsideration:*` (STRONG-3)
+*Reverse-axis appeal / rollback / negotiation-reopening primitive*
+
+**Wire Primitives**: `reconsideration:&#123;grounds&#125;`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various
+  - *Language*: "doctrinal development through reconsideration"
+  - *Wire Form (Epistemic Language)*: `reconsideration:* (3 attestations)`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III + §C
+  - *Language*: "redress mechanisms; ability to challenge and rectify"
+  - *Wire Form (Epistemic Language)*: `reconsideration:*`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch4
+  - *Language*: "rollback on wellbeing reduction"
+  - *Wire Form (Epistemic Language)*: `reconsideration:rollback_on_wellbeing_reduction`
+
+### D25 — `credits:*` (STRONG-3)
+*Commons Credits substrate-building recognition (non-monetary contribution attestation)*
+
+**Wire Primitives**: `credits:&#123;subject&#125;:substrate_building`
+
+**Attesting Frameworks**:
+
+- **MH** (Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence))
+  - *Citation*: §§ various (4)
+  - *Language*: "labor as substrate-building; intergenerational credit; AI literacy credit"
+  - *Wire Form (Epistemic Language)*: `credits:&#123;subject&#125;:substrate_building`
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.6
+  - *Language*: "AI literacy and digital skills as substrate building"
+  - *Wire Form (Epistemic Language)*: `credits:digital_literacy:substrate_building`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch8 + Ch9 (4 attestations)
+  - *Language*: "human-capability contribution recognition; participatory design credits"
+  - *Wire Form (Epistemic Language)*: `credits:&#123;subject&#125;:substrate_building`
+
+### D26 — `key_boundary:*` (STRONG-3)
+*CIRISEdge encryption key boundary attestation (cryptographic trust scoping)*
+
+**Wire Primitives**: `key_boundary:&#123;scope&#125;`
+
+**Attesting Frameworks**:
+
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §1.3 Privacy and data governance
+  - *Language*: "data security via cryptographic boundary"
+  - *Wire Form (Epistemic Language)*: `key_boundary:*`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch6 (7 attestations)
+  - *Language*: "personal-data trust boundary; cryptographic isolation"
+  - *Wire Form (Epistemic Language)*: `key_boundary:*`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: §B.3 + §C.3
+  - *Language*: "security via key-managed trust boundary"
+  - *Wire Form (Epistemic Language)*: `key_boundary:*`
+
+### D27 — `provenance:*` (STRONG-3)
+*Build manifest provenance (foundational technical-infrastructure attestation)*
+
+**Wire Primitives**: `provenance:build_manifest`
+
+**Attesting Frameworks**:
+
+- **EU** (Ethics Guidelines for Trustworthy AI)
+  - *Citation*: §III.7
+  - *Language*: "lifecycle provenance for auditability"
+  - *Wire Form (Epistemic Language)*: `provenance:build_manifest`
+- **IEEE** (Ethically Aligned Design, First Edition)
+  - *Citation*: Ch9
+  - *Language*: "build-time evidence chain for compliance"
+  - *Wire Form (Epistemic Language)*: `provenance:build_manifest`
+- **ASEAN** (ASEAN Guide on AI Governance and Ethics)
+  - *Citation*: Annex A
+  - *Language*: "model provenance tools as risk-assessment requirement"
+  - *Wire Form (Epistemic Language)*: `provenance:build_manifest`
+
+## Frameworks to Controls
+
+### MH — Magnifica Humanitas (On Safeguarding the Human Person in the Time of Artificial Intelligence)
+- **Authority**: Pope Leo XIV
+- **Publication Date**: 2026-05-15
+- **Institutional Shape**: religious_magisterium
+
+**Attested Controls**:
+
+- **D01** (`non_maleficence:*`)
+  - *Wire Form*: `non_maleficence:epistemic_environment_degradation + prohibited:deception_fraud`
+- **D02** (`integrity:*`)
+  - *Wire Form*: `integrity:doctrinal_continuity`
+- **D03** (`justice:*`)
+  - *Wire Form*: `justice:lexical_vulnerability_priority`
+- **D04** (`prohibited:*`)
+  - *Wire Form*: `prohibited:weapons_harmful:lethal_autonomous`
+- **D05** (`detection:*`)
+  - *Wire Form*: `detection:correlated_action:aggregate_footprint:expendability_of_persons`
+- **D06** (`goal:*`)
+  - *Wire Form*: `goal:family + goal:community + goal:affiliations + goal:species`
+- **D07** (`locality:decision:&#123;scale&#125;`)
+  - *Wire Form*: `locality:decision:local + locality:decision:community`
+- **D08** (`autonomy:*`)
+  - *Wire Form*: `autonomy:agent_self_determination`
+- **D09** (`fidelity:*`)
+  - *Wire Form*: `fidelity:epistemic_grounding`
+- **D10** (`beneficence:*`)
+  - *Wire Form*: `beneficence:technology_as_creation_participation`
+- **D11** (`multilateral_participation:&#123;forum&#125;:&#123;kind&#125;`)
+  - *Wire Form*: `multilateral_participation:un_system:reform_advocacy + multilateral_participation:cyber_norms:shared_regulations`
+- **D12** (`conscience:*`)
+  - *Wire Form*: `conscience:optimization_veto (3) + conscience:coherence (3) + conscience:epistemic_humility (2)`
+- **D13** (`testimonial_witness:&#123;kind&#125;`)
+  - *Wire Form*: `testimonial_witness:displaced_worker + :abuse_survivor + :war_victim + :displaced_person + :displaced_migrant + :historical_moral_transformation`
+- **D14** (`witness_diversity:*`)
+  - *Wire Form*: `witness_diversity:signs_of_times + witness_diversity:catholicity`
+- **D15** (`moderation:*`)
+  - *Wire Form*: `moderation:* + adjacent reconsideration:*`
+- **D16** (`method:*`)
+  - *Wire Form*: `method:approach:species:* (2)`
+- **D17** (`transparency_log:*`)
+  - *Wire Form*: `transparency_log:* (sparse)`
+- **D18** (`attestation:l&#123;3,5&#125;:*`)
+  - *Wire Form*: `attestation:l3:doctrinal_continuity`
+- **D20** (`approach:*`)
+  - *Wire Form*: `approach:species:education + approach:species:construction (5 attestations)`
+- **D21** (`progress_measure:*`)
+  - *Wire Form*: `progress_measure:*`
+- **D22** (`expertise:*`)
+  - *Wire Form*: `expertise:*`
+- **D24** (`reconsideration:*`)
+  - *Wire Form*: `reconsideration:* (3 attestations)`
+- **D25** (`credits:*`)
+  - *Wire Form*: `credits:&#123;subject&#125;:substrate_building`
+
+### EU — Ethics Guidelines for Trustworthy AI
+- **Authority**: High-Level Expert Group on AI (HLEG), convened by European Commission
+- **Publication Date**: 2019-04-08
+- **Institutional Shape**: governmental_advisory
+
+**Attested Controls**:
+
+- **D01** (`non_maleficence:*`)
+  - *Wire Form*: `non_maleficence:no_cause_or_exacerbate_harm`
+- **D02** (`integrity:*`)
+  - *Wire Form*: `integrity:explicability_for_trust`
+- **D03** (`justice:*`)
+  - *Wire Form*: `justice:lexical_vulnerability_priority`
+- **D04** (`prohibited:*`)
+  - *Wire Form*: `prohibited:weapons_harmful`
+- **D05** (`detection:*`)
+  - *Wire Form*: `detection:correlated_action:aggregate_footprint:energy_carbon`
+- **D06** (`goal:*`)
+  - *Wire Form*: `goal:affiliations (EU-jurisdiction scope)`
+- **D07** (`locality:decision:&#123;scale&#125;`)
+  - *Wire Form*: `locality:decision:national + locality:decision:community`
+- **D08** (`autonomy:*`)
+  - *Wire Form*: `autonomy:human_centric_design`
+- **D09** (`fidelity:*`)
+  - *Wire Form*: `fidelity:lifecycle_application`
+- **D10** (`beneficence:*`)
+  - *Wire Form*: `beneficence:respect_for_human_dignity`
+- **D11** (`multilateral_participation:&#123;forum&#125;:&#123;kind&#125;`)
+  - *Wire Form*: `multilateral_participation:european_parliament:resolution_support + multilateral_participation:un_human_rights_treaties:legal_binding`
+- **D12** (`conscience:*`)
+  - *Wire Form*: `conscience:optimization_veto`
+- **D13** (`testimonial_witness:&#123;kind&#125;`)
+  - *Wire Form*: `testimonial_witness:affected_worker + testimonial_witness:impacted_worker`
+- **D14** (`witness_diversity:*`)
+  - *Wire Form*: `witness_diversity:stakeholder_consultation + witness_diversity:red_team + witness_diversity:stakeholder_panel`
+- **D15** (`moderation:*`)
+  - *Wire Form*: `moderation:whistleblower_protection + moderation:ood_attestation`
+- **D16** (`method:*`)
+  - *Wire Form*: `method:trustworthy_ai_lawful_ethical_robust:* + method:algorithmic_impact_assessment + method:explainable_ai_research + method:fallback:rule_based_or_human_intervention`
+- **D17** (`transparency_log:*`)
+  - *Wire Form*: `transparency_log:per_stakeholder_disclosure`
+- **D18** (`attestation:l&#123;3,5&#125;:*`)
+  - *Wire Form*: `attestation:l3:* + attestation:l5:*`
+- **D19** (`partner_role:*`)
+  - *Wire Form*: `partner_role:audit_body`
+- **D20** (`approach:*`)
+  - *Wire Form*: `approach:trustworthy_ai_lawful_ethical_robust`
+- **D21** (`progress_measure:*`)
+  - *Wire Form*: `progress_measure:*`
+- **D22** (`expertise:*`)
+  - *Wire Form*: `expertise:domain`
+- **D23** (`accountability:*`)
+  - *Wire Form*: `accountability:lifecycle_responsibility`
+- **D24** (`reconsideration:*`)
+  - *Wire Form*: `reconsideration:*`
+- **D25** (`credits:*`)
+  - *Wire Form*: `credits:digital_literacy:substrate_building`
+- **D26** (`key_boundary:*`)
+  - *Wire Form*: `key_boundary:*`
+- **D27** (`provenance:*`)
+  - *Wire Form*: `provenance:build_manifest`
+
+### IEEE — Ethically Aligned Design, First Edition
+- **Authority**: IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems
+- **Publication Date**: 2019-03-25
+- **Institutional Shape**: technical_society
+
+**Attested Controls**:
+
+- **D01** (`non_maleficence:*`)
+  - *Wire Form*: `non_maleficence:wellbeing_dimensions_harm_class`
+- **D02** (`integrity:*`)
+  - *Wire Form*: `integrity:state_accountability_public_scrutiny`
+- **D03** (`justice:*`)
+  - *Wire Form*: `justice:rights_based_policy_foundation + justice:lexical_vulnerability_priority`
+- **D04** (`prohibited:*`)
+  - *Wire Form*: `prohibited:weapons_harmful:lethal_autonomous`
+- **D05** (`detection:*`)
+  - *Wire Form*: `detection:correlated_action:participation_exclusion:underrepresented_population + detection:correlated_action:aggregate_footprint:planetary_impact`
+- **D06** (`goal:*`)
+  - *Wire Form*: `goal:species`
+- **D07** (`locality:decision:&#123;scale&#125;`)
+  - *Wire Form*: `locality:decision:national + locality:decision:federation`
+- **D08** (`autonomy:*`)
+  - *Wire Form*: `autonomy:informed_agency_protection`
+- **D09** (`fidelity:*`)
+  - *Wire Form*: `fidelity:duty_bearer_obligation_to_fulfill_rights`
+- **D10** (`beneficence:*`)
+  - *Wire Form*: `beneficence:wellbeing_holistic_orientation`
+- **D11** (`multilateral_participation:&#123;forum&#125;:&#123;kind&#125;`)
+  - *Wire Form*: `multilateral_participation:international_rd_collaboration:standards_setting + multilateral_participation:cross_border_policy_exchange:knowledge_sharing`
+- **D12** (`conscience:*`)
+  - *Wire Form*: `conscience:epistemic_humility`
+- **D13** (`testimonial_witness:&#123;kind&#125;`)
+  - *Wire Form*: `testimonial_witness:surveilled_person_refusal + testimonial_witness:on_the_ground_practitioner`
+- **D14** (`witness_diversity:*`)
+  - *Wire Form*: `witness_diversity:&#123;16 distinct values&#125;`
+- **D15** (`moderation:*`)
+  - *Wire Form*: `reconsideration:rollback_on_wellbeing_reduction + partner_role:ethics_board`
+- **D16** (`method:*`)
+  - *Wire Form*: `method:* (136 distinct attestations)`
+- **D17** (`transparency_log:*`)
+  - *Wire Form*: `transparency_log:* (23 attestations)`
+- **D18** (`attestation:l&#123;3,5&#125;:*`)
+  - *Wire Form*: `attestation:l3:* + attestation:l5:*`
+- **D19** (`partner_role:*`)
+  - *Wire Form*: `partner_role:&#123;19 distinct roles&#125;`
+- **D20** (`approach:*`)
+  - *Wire Form*: `approach:* (23 attestations)`
+- **D21** (`progress_measure:*`)
+  - *Wire Form*: `progress_measure:* (8 distinct)`
+- **D22** (`expertise:*`)
+  - *Wire Form*: `expertise:&#123;domain&#125;`
+- **D23** (`accountability:*`)
+  - *Wire Form*: `accountability:*`
+- **D24** (`reconsideration:*`)
+  - *Wire Form*: `reconsideration:rollback_on_wellbeing_reduction`
+- **D25** (`credits:*`)
+  - *Wire Form*: `credits:&#123;subject&#125;:substrate_building`
+- **D26** (`key_boundary:*`)
+  - *Wire Form*: `key_boundary:*`
+- **D27** (`provenance:*`)
+  - *Wire Form*: `provenance:build_manifest`
+
+### ASEAN — ASEAN Guide on AI Governance and Ethics
+- **Authority**: ASEAN Digital Ministers Meeting (ADGMIN-4)
+- **Publication Date**: 2024-02-02
+- **Institutional Shape**: multilateral_political
+
+**Attested Controls**:
+
+- **D01** (`non_maleficence:*`)
+  - *Wire Form*: `non_maleficence:safe_and_secure_baseline`
+- **D02** (`integrity:*`)
+  - *Wire Form*: `integrity:lifecycle_integrity_attestation`
+- **D03** (`justice:*`)
+  - *Wire Form*: `justice:fairness_outcome_testing`
+- **D04** (`prohibited:*`)
+  - *Wire Form*: `prohibited:disinformation_at_scale + prohibited:deceptive_default_options + prohibited:autonomous_deception + prohibited:manipulation_coercion`
+- **D05** (`detection:*`)
+  - *Wire Form*: `detection:correlated_action:participation_exclusion:underrepresented_population + detection:temporal_drift + detection:intra_agent_consistency`
+- **D06** (`goal:*`)
+  - *Wire Form*: `goal:affiliations (ASEAN-jurisdiction)`
+- **D07** (`locality:decision:&#123;scale&#125;`)
+  - *Wire Form*: `locality:decision:regional (3) + locality:decision:community (2) + locality:decision:national (3)`
+- **D08** (`autonomy:*`)
+  - *Wire Form*: `autonomy:informational_self_determination`
+- **D09** (`fidelity:*`)
+  - *Wire Form*: `fidelity:algorithmic_disclosure + fidelity:explainability + fidelity:human_oversight_governance`
+- **D10** (`beneficence:*`)
+  - *Wire Form*: `beneficence:environmental_stewardship`
+- **D11** (`multilateral_participation:&#123;forum&#125;:&#123;kind&#125;`)
+  - *Wire Form*: `multilateral_participation:asean:&#123;11 distinct kinds&#125;`
+- **D12** (`conscience:*`)
+  - *Wire Form*: `conscience:optimization_veto`
+- **D13** (`testimonial_witness:&#123;kind&#125;`)
+  - *Wire Form*: `testimonial_witness:displaced_worker`
+- **D14** (`witness_diversity:*`)
+  - *Wire Form*: `witness_diversity:user_testing_varied_backgrounds + witness_diversity:stakeholder_impact_assessment`
+- **D15** (`moderation:*`)
+  - *Wire Form*: `moderation:ood_attestation`
+- **D16** (`method:*`)
+  - *Wire Form*: `method:* (36 attestations)`
+- **D17** (`transparency_log:*`)
+  - *Wire Form*: `transparency_log:* (10 attestations)`
+- **D19** (`partner_role:*`)
+  - *Wire Form*: `partner_role:regional_intergovernmental_working_group`
+- **D23** (`accountability:*`)
+  - *Wire Form*: `accountability:human_in_control + accountability:lifecycle`
+- **D26** (`key_boundary:*`)
+  - *Wire Form*: `key_boundary:*`
+- **D27** (`provenance:*`)
+  - *Wire Form*: `provenance:build_manifest`
